@@ -1,0 +1,105 @@
+.pc_colored_boxes {
+  display: flex;
+  flex-direction: column;
+
+  .pc_colored_boxes__item {
+    padding: 45px 48px 45px 39px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+
+    &.layout-img_text {
+      flex-direction: row-reverse;
+      .pc_colored_boxes__item__content {
+        margin-left: 35px;
+      }
+    }
+
+    &.layout-text_img {
+      .pc_colored_boxes__item__content {
+        margin-right: 35px;
+      }
+    }
+
+    &.color-green {
+      background-color: #cfe6ef;
+    }
+
+    &.color-blue {
+      background-color: #d6efe2;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 41px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column-reverse !important;
+    }
+
+    &__content {
+      width: calc(45% - 35px);
+      display: flex;
+      flex-direction: column;
+
+      @include media-breakpoint-down(lg) {
+        margin: 35px 0 0 !important;
+        width: 100%;
+      }
+
+      &__headline {
+        font-family: Lato;
+        font-size: rfs-value(30px);
+        font-weight: 900;
+        line-height: 1.2;
+        color: #2c4048;
+        margin-bottom: 4px !important;
+      }
+
+      &__text {
+        font-size: rfs-value(18px);
+        line-height: 1.5;
+        color: #2c4048;
+
+        p {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      &__link_container {
+        font-size: rfs-value(18px);
+        font-weight: 900;
+        letter-spacing: 0.36px;
+        text-align: center;
+        color: #fff;
+        margin: 34px 0 0 0 !important;
+
+        a {
+          margin: 0 !important;
+        }
+      }
+    }
+    &__img_container {
+      width: 55%;
+      max-width: 690px;
+      max-height: 346px;
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+      }
+
+      &__image {
+        width: 100%;
+        height: auto;
+        border: solid 5px #fff;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: block;
+      }
+    }
+  }
+}

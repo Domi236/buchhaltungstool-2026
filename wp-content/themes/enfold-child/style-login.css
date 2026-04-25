@@ -1,0 +1,178 @@
+/*
+https://codex.wordpress.org/Customizing_the_Login_Form
+Here's some helpful, highly specifc CSS selectors for the login page:
+body.login {}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {}
+body.login div#login form#loginform {}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {}
+body.login div#login p#nav {}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {}
+ */
+
+body.login {
+    background-color: #F9F9F9;
+}
+
+#login {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    font-family: 'ubuntu',Helvetica,Arial,sans-serif;
+}
+
+.language-switcher {
+    display: none;
+}
+
+
+/* LOGO */
+
+.login h1 a {
+    background-image: url(/wp-content/uploads/2022/06/sanlucar-logo.png);
+    background-size: contain;
+    height: 84px;
+    width: 254px;
+    margin-top: 64px;
+}
+
+/* LOGIN MESSAGE */
+
+.login .message {
+    border-left-width: 0;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'ubuntu',Helvetica,Arial,sans-serif;
+    color: #202255;
+    font-weight: bold;
+}
+
+.login #login_error {
+    border-left-width: 0;
+    background-color: transparent;
+    color: #dd0000;
+    font-weight: bold;
+    box-shadow: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    font-family: 'ubuntu',Helvetica,Arial,sans-serif;
+}
+
+
+/* LOGIN FORM */
+
+.login form {
+    border-width: 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08), 0 6px 18px 0 rgba(0, 0, 0, 0.08);
+    padding: 1.25rem 1rem;
+}
+
+.login form input:not(input[type='checkbox']),
+.login form .input:not(input[type='checkbox']) {
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #202255 !important;
+    font-size: 1.0625rem;
+    line-height: 24px;
+    padding: 12px;
+    font-family: 'ubuntu',Helvetica,Arial,sans-serif;
+    box-shadow: none !important;
+    font-weight: bold;
+    color: #202255;
+}
+
+.login form input[type='checkbox'] {
+    border-radius: 0;
+}
+
+.login form input:focus {
+    outline: 0 !important;
+    border: none;
+}
+
+.login form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #202255;
+    font-family: 'ubuntu',Helvetica,Arial,sans-serif;
+}
+
+@media (min-width: 768px) {
+    .login form {
+        padding: 1.5rem 2rem 2rem;
+    }
+}
+
+
+/* BUTTON */
+
+.wp-core-ui .button-primary {
+    color: white !important;
+    background-color: #202255;
+    border: 1px solid #202255 !important;
+    box-shadow: 0 1px 3px 0 #d4e8f1;
+    border-radius: 8px;
+    font-weight: bold !important;
+    line-height: 1.5 !important;
+    letter-spacing: -.01em;
+    transition: transform ease 250ms, background-color ease 250ms, border-color ease 250ms, box-shadow ease 250ms !important;
+}
+
+.wp-core-ui .button.button-large {
+    font-size: 16px;
+    padding: 11px 19px;
+    min-height: auto;
+}
+
+#login .button-primary:hover,
+#login .button-primary:focus,
+#login .button-primary:active {
+    background-color: #202255 !important;
+    color: #fff !important;
+}
+
+.login.wp-core-ui .button-primary {
+    display: block;
+    width: 100%;
+    background-color: #d4e8f1;
+    color: #202255 !important;
+    border: none !important;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+
+/* LINKS ON BOTTOM */
+
+.login #backtoblog {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 64px;
+}
+
+.login #backtoblog a {
+    color: #202255 !important;
+    font-weight: bold;
+    font-family: 'ubuntu',Helvetica,Arial,sans-serif;
+}
+
+.login #backtoblog a:hover,
+.login #backtoblog a:focus,
+.login #backtoblog a:active {
+    outline: none;
+    box-shadow: none;
+}

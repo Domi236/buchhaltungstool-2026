@@ -1,0 +1,95 @@
+/*
+  RESET HEADING
+*/
+body .av-special-heading .av-special-heading-tag {
+  float: none;
+}
+
+.main_color,
+.alternate_color {
+
+  .special-heading-border {
+    height: 0 !important;
+  }
+
+  .special-heading-inner-border {
+    border-color: transparent !important;
+  }
+}
+
+/* RESET IMAGE BORDER RADIUS */
+
+.avia-image-container-inner,
+.avia_image,
+.av-image-caption-overlay,
+.avia-slideshow li img {
+  border-radius: 0;
+}
+
+/* RESET TINY WEBSITE PADDING ON SMALLER SCREENS */
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  padding-right: var(--bs-gutter-x, 2rem);
+  padding-left: var(--bs-gutter-x, 2rem);
+}
+
+/* RESET REDUCED OPACITY ON HOVER IN MAIN NAV */
+
+#top .av_header_transparency .main_menu ul:first-child > li > a:hover, #top #wrap_all .av_header_transparency .sub_menu > ul > li > a:hover {
+  opacity: 1;
+}
+
+/* RESET BOLD COLOR */
+
+.main_color,
+.alternate_color {
+  strong, b {
+    color: inherit;
+  }
+}
+
+
+/* RESET STYLES FOR GRAVITY FORMS */
+
+#top .input-text, #top input[type="text"], #top input[type="input"], #top input[type="password"], #top input[type="email"], #top input[type="number"], #top input[type="url"], #top input[type="tel"], #top input[type="search"], #top textarea, #top select {
+  font-family: inherit;
+}
+
+#top .main_color .input-text, #top .main_color input[type='text'], #top .main_color input[type='input'], #top .main_color input[type='password'], #top .main_color input[type='email'], #top .main_color input[type='number'], #top .main_color input[type='url'], #top .main_color input[type='tel'], #top .main_color input[type='search'], #top .main_color textarea, #top .main_color select {
+  color: inherit;
+}
+
+#main {
+  background-color: $secondary-color;
+  border: none;
+}
+
+.image-overlay {
+  display: none;
+  visibility: hidden;
+}
+
+
+//facet wp reset filter
+
+.facetwp-hidden {
+  display: none !important;
+}
+
+.facetwp-toggle, .facetwp-toggle.facetwp-hidden, .facetwp-load-more.facetwp-hidden  {
+  display: none !important;
+}
+
+.location-results {
+  z-index: 9;
+}
+
+
+/** reset header */
+.html_header_top.html_header_topbar_active.html_header_sticky #top #main {
+  padding-top: 94px !important;
+
+  @media (max-width: $mobileBreakpointMax) {
+    padding-top: 74px !important;
+  }
+}

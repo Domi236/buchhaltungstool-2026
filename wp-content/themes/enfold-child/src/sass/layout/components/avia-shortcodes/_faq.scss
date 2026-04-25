@@ -1,0 +1,94 @@
+.pc_faq {
+  &--filterable {
+    @include media-breakpoint-down(md) {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+
+    .pc_faq__output {
+      @include media-breakpoint-down(md) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+    .facetwp-facet.facetwp-facet-faq_category {
+      margin-bottom: 54px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__filter {
+    @extend %facet-fullwidth-category-filter;
+  }
+
+  &__item {
+    border-bottom: 1px solid var(--neutral-200);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    h5 {
+      margin-bottom: 0 !important;
+      padding: 16px 0;
+      color: var(--neutral-800);
+      line-height: 1.5;
+      font-size: rfs-value(16px);
+      font-family: var(--fs-open-sans);
+    }
+
+    &__toggle {
+      display: flex;
+      justify-content: space-between;
+
+      &.active {
+        .svg-inline--fa {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+    &__content {
+      display: none;
+      font-weight: 500;
+      color: var(--neutral-500);
+      padding: 0 0 1rem;
+
+      p:first-child {
+        //margin-top: 12px;
+      }
+    }
+  }
+
+  .facetwp-template > h3 {
+    margin: 64px 0 36px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.pc_faq_suche {
+  @include media-breakpoint-up(xxl) {
+    //background-image: url(../../../../images/illu_cloud.svg);
+    background-repeat: no-repeat!important;
+    background-position: top 680px left 48px;
+    background-size: 260px auto;
+  }
+  @media (min-width: 1600px) {
+    background-size: 304px auto;
+  }
+
+  .pc_tab_filter__output {
+    @include media-breakpoint-up(lg) {
+      //background-image: url(../../../../images/illu_solar_panel_192x192.svg), url(../../../../images/illu_grass_textpage.svg);
+      background-repeat: no-repeat, no-repeat !important;
+      background-position: bottom left 16px, bottom right 16px;
+      background-size: 192px auto, 192px auto;
+    }
+  }
+}

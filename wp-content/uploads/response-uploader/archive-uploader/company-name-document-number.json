@@ -1,0 +1,596 @@
+{
+  "pages_count": "1",
+  "products_count": "2",
+  "document_path": "/wp-content/uploads/document-uploader/archive-uploader/AmazonBusinessRechnungsnr1413-RKG4-CGDL.pdf",
+  "json_path": "/wp-content/uploads/response-uploader/archive-uploader/company-name-document-number.json",
+  "document_type": {
+    "name": "Invoice",
+    "coordinates": {
+      "x1": "0.1",
+      "y1": "0.26",
+      "x2": "0.2",
+      "y2": "0.5"
+    },
+    "accuracy": 50
+  },
+  "not_defined": [
+    "Eisgrubengasse",
+    "EA-16239213",
+    "DE26 7007 0010 0203 5863 00"
+  ],
+  "pages": [
+    {
+      "page_number": "1",
+      "document_number": {
+        "name": "RN-131234144",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+        "accuracy": 50
+      },
+      "document_date": {
+        "name": "20.05.2023",
+        "coordinates": {
+            "x1": "0.1",
+            "y1": "0.26",
+            "x2": "0.2",
+            "y2": "0.5"
+          },
+        "accuracy": 50
+      },
+      "term_of_payment": {
+        "name": "13.06.2023",
+        "coordinates": {
+            "x1": "0.1",
+            "y1": "0.26",
+            "x2": "0.2",
+            "y2": "0.5"
+          },
+        "accuracy": 50
+      },
+      "term_of_delivery": {
+        "name": "21.05.2023",
+        "coordinates": {
+            "x1": "0.1",
+            "y1": "0.26",
+            "x2": "0.2",
+            "y2": "0.5"
+          },
+        "accuracy": "Not Labeled"
+      },
+      "products": [
+        {
+          "article_name": {
+            "name": "Plastik Beutel",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "article_number": {
+            "name": "AN-231798142",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "quantity": {
+            "name": "10",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "unit_of_measure": {
+            "name": "Stück",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "price_gross": {
+            "name": "15",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": "Labeled"
+          },
+          "price_net": {
+            "name": "12.12",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "currency": {
+            "name": "€",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "tax_rate": {
+            "name": "20",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "description": {
+            "name": "Description",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          }
+        },
+        {
+          "article_name": {
+            "name": "Papier Beutel",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "article_number": {
+            "name": "AN-23173142",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "quantity": {
+            "name": "10",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "unit_of_measure": {
+            "name": "Stück",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "price_gross": {
+            "name": "15",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "price_net": {
+            "name": "12.12",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "currency": {
+            "name": "€",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "tax_rate": {
+            "name": "20",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          },
+          "description": {
+            "name": "Description",
+            "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+            "accuracy": 50
+          }
+        }
+      ],
+      "client_data": {
+        "company_name": {
+          "name": "Verner",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "client_number": {
+          "name": "EA-3223121",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "customer_agent": {
+          "name": "David Baummann",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "phone_number": {
+          "name": "+45662312123",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "mail": {
+          "name": "office@test.at",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "uid_number": {
+          "name": "AT3311ß23123",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "tax_number": {
+          "name": "312445234122",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "bank_details_bank_name": {
+          "name": "Bank Austria",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "account_owner": {
+          "name": "David Baummann",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "bank_details_iban": {
+          "name": "AT23 1312 1322 3423",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "bank_details_bic": {
+          "name": "BAWAATWWXXX",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "company_country": {
+          "name": "Österreich",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": "Labeled"
+        },
+        "company_postal_code": {
+          "name": "2351",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "company_town": {
+          "name": "Wiener Neudorf",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "company_street": {
+          "name": "Brauhausstraße",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": "Labeled"
+        },
+        "company_number": {
+          "name": "8/4/21",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "shipping_country": {
+          "name": "Deutschland",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "shipping_postal_code": {
+          "name": "23240",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "shipping_town": {
+          "name": "Wien",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": "Not Labeled"
+        },
+        "shipping_street": {
+          "name": "Innerstreet",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "shipping_number": {
+          "name": "12",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        }
+      },
+      "recipient_data": {
+        "company_name": {
+          "name": "Bauhaus",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "uid_number": {
+          "name": "AT3311993123",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "tax_number": {
+          "name": "999445234122",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "company_country": {
+          "name": "Switzeland",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "company_postal_code": {
+          "name": "2351",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "company_town": {
+          "name": "Griesfeld",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "company_street": {
+          "name": "Lindendorferstraße",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "company_number": {
+          "name": "12",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "recipient_country": {
+          "name": "Norwegen",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "recipient_postal_code": {
+          "name": "23182",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "recipient_town": {
+          "name": "irrlandbaum",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "recipient_street": {
+          "name": "Straßenauf",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        },
+        "recipient_number": {
+          "name": "172",
+          "coordinates": {
+              "x1": "0.1",
+              "y1": "0.26",
+              "x2": "0.2",
+              "y2": "0.5"
+            },
+          "accuracy": 50
+        }
+      }
+    }
+  ]
+}

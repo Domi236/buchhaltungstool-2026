@@ -1,0 +1,145 @@
+.gform_heading .gform_required_legend {
+  display: none;
+}
+
+#top .main_color input[type='text'], #top .main_color textarea, #top .main_color select{
+  border:none;
+  background-color:#F2F2F2;
+}
+
+.gfield_consent_label{
+  text-transform:none !important;
+}
+
+.gfield_consent_label a{
+  color:#D1010A;
+}
+
+.gform_footer input[type=submit]{
+  background-color:#D1010A;
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+form .gform_body input, form .gform_body select,  form .gform_body select option {
+  height: 39.2px;
+}
+
+form .ginput_container.ginput_container_consent {
+  display: flex;
+  align-items: center;
+
+  input {
+    margin-top: 1px;
+  }
+
+  @media (max-width: 551px) {
+    position: relative;
+
+    span.gfield_required {
+      position: absolute;
+      right: -2px;
+      top: 0;
+    }
+  }
+
+  @media (max-width: 537px) {
+    align-items: flex-start;
+
+    input {
+      height: auto;
+      margin-top: 8px;
+    }
+
+    span.gfield_required {
+      position: absolute;
+      left: 103px;
+      bottom: -7px;
+      right: unset;
+      top: unset;
+    }
+  }
+
+  @media (max-width: 431.5px) {
+
+    span.gfield_required {
+      left: 170px;
+    }
+  }
+
+  @media (max-width: 351.5px) {
+
+    span.gfield_required {
+      left: 198px;
+    }
+  }
+
+  @media (max-width: 320.5px) {
+
+    span.gfield_required {
+      left: 172px;
+    }
+  }
+}
+
+form {
+  label {
+  }
+
+  li.gfield {
+    margin: 0 0 20px !important;
+    padding: 0;
+  }
+
+  .ginput_container.ginput_container_select {
+    margin-top: 2px !important;
+  }
+
+  .ginput_container {
+    > span {
+      padding: 0 !important;
+      margin-bottom: 0;
+      margin-top: 0;
+
+      label {
+        padding: 0 !important;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+
+    #input_1_2_6,#input_1_2_3 {
+      margin-top: 0;
+    }
+
+    #input_1_2_3_container {
+      margin-bottom: 20px;
+      padding-top: 0 !important;
+      padding-right: 16px !important;
+    }
+
+    #input_1_2_6_container {
+      padding-right: 16px !important;
+    }
+  }
+
+  @media only screen and (min-width: 642px) {
+    #field_1_2, #input_1_2_3_container label, #input_1_2_6_container label {
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
+      letter-spacing: 0 !important;
+    }
+  }
+
+  select option:hover {
+    background: $primary-color !important;
+  }
+}
+
+#gform_ajax_frame_5,
+#gform_wrapper_5 {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+

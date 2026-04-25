@@ -1,0 +1,58 @@
+Nur Betriebsausgaben/Einnahmen gerechnet mit 20%/0% Steuerklasse
+
+Datenverarbeitung:
+Einnahmen: 20% -> 2892€
+2592
+228
+Zwischensumme: 2892
+
+
+Einnahmen: 0% -> 8€
+Gutschriften: -62,15
+
+
+Ausgaben: 6 149,86€
+225,23
+238,68
+73,29
+94,79
+9,4
+25,3
+39,33
+42,24
+129,6
+39,96
+21,93
+98,97
+37,86
+100,56
+3,48 x6
+189,08
+24,12
+24,12
+580
+40
+258,00 x 7
+519,03
+22,89
+24,20
+35,40
+25,33
+9,95
+10,14
+9,95
+9,95
+3,16
+5,91
+1471,65
+30,35
+38,21
+41,35
+31,26
+Zwischensumme: 6150,16
+
+Gutschriften:
+-55,32
+-6,83
+
+

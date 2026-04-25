@@ -1,0 +1,29 @@
+/**
+Slider default
+ */
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: $alternate-color;
+  margin: 0 2.5px;
+  opacity: 1;
+
+  &:hover, &:active, &:focus {
+    background: $primary-color;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  width: 16px;
+  height: 16px;
+  background: $primary-color;
+}

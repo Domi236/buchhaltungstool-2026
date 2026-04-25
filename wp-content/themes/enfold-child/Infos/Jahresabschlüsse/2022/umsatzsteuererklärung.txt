@@ -1,0 +1,116 @@
+Umsatzsteuererklärung: 10% versteuert
+
+eventmanagement:
+23,49
+102,93
+28,52
+-----
+Summe mit ust: 154,94
+Summe ohne ust: 140,85 
+Umsatzsteuer davon: 14,09
+
+
+werbeagentur:
+24,11
+15,39
+-----
+Summe mit ust: 39,5
+Summe ohne ust: 35,91
+Umsatzsteuer davon: 3,59
+-------------
+-----
+Gesamt Summe mit ust: 194,44
+Gesamt Summe ohne ust: 176,76
+Gesamt Umsatzsteuer davon: 17,68
+
+
+
+
+------------------
+
+Umsatzsteuererklärung: 20% versteuert
+
+eventmanagement:
+800,00
+756,92
+12,55
+70,77
+9,15
+47,98
+82,28
+21,90
+59,80
+28,99
+10,38
+55,02
+799,00
+Zwischenwert: 2.754,74
+800,00
+800,00
+800,00
+800,00
+23,95
+216,00
+134,20
+14,90
+121,53
+-----
+Summe mit ust: 6.465,32
+Summe ohne ust:  5387,77
+Umsatzsteuer davon: 1.077,55
+
+-----------
+
+werbeagentur:
+94,08
+42,60
+78,12
+42,60
+90,48
+414,12
+42,60
+28,5
+101,14
+422,87
+325,34
+161,87
+31,92
+zwischenwert: 1876,96
+21,84
+800,00
+316,30
+389,30
+362,44
+61,32
+364,94
+70,97
+109,99
+572,40
+113,05
+212,84
+86,14
+499,16
+69,52
+685,00
+9,99
+180,00
+48,00
+-----
+Summe mit ust: 6.850,16
+Summe ohne ust: 5708,47
+Umsatzsteuer davon: 1.141,69
+
+----------
+
+-----
+Gesamt Summe mit ust: 13.315,48
+Gesamt Summe ohne ust: 11.096,24
+Gesamt Umsatzsteuer davon: 2.219,24
+
+-------------------------------------------------------
+10% + 20% UST Berechnung
+Gesamt Summe mit ust: 13.509,92
+Gesamt Summe ohne ust: 11.273
+Gesamt Umsatzsteuer davon: 2.236,92
+
+

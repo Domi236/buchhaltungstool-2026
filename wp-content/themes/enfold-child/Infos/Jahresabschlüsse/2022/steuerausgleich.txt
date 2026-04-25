@@ -1,0 +1,36 @@
+kleine arbeitsplatzpauschale -> 300 -> nicht selbstständiger arbeit
+
+werbeagentur ausgaben:
+Branchenkennzahl -> Werbung
+waren -> 1127,13
+lizenzgebühren -> 1040,11
+übrige betriebskosten -> 3063,66
+
+versicherungen -> 942
+Einnahmen -> 2114,31
+Einnahmen/Ausgaben Rechnung -> -3.616,59
+
+--------
+event management ausgaben:
+Branchenkennzahl -> messe, kongress
+waren -> 5954,74
+Fremdpersonal -> 126,42
+werbekosten -> 14,90
+übrige betriebskosten -> 524,20
+reisekosten -> 499,16 / 2 -> 249,58
+miete garage -> 685
+
+Einnahmen -> 1119,25
+Einnahmen/Ausgaben Rechnung -> -6.684,92
+
+--------
+büro service ausgaben:
+Branchenkennzahl -> call centers
+
+Einnahmen -> 759,84
+Einnahmen/Ausgaben Rechnung -> 759,84
+
+Summe: -9.734,34
+
+
+

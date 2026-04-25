@@ -1,0 +1,69 @@
+
+@function dynamic-size($min-font-size, $max-font-size) {
+  $min: ($min-font-size / ($min-font-size * 0 + 1)) / 16;
+  $max: ($max-font-size / ($max-font-size * 0 + 1)) / 16;
+  $calc: $max / 83.75 * 100vw;
+
+  @return clamp(#{$min}rem, #{$calc}, #{$max}rem);
+}
+
+
+
+/* LINK ANIMATION */
+@mixin link-animation {
+  text-decoration: none !important;
+
+  span {
+    position: relative;
+
+    &:after {
+      content: '';
+      transition: all .4s ease-in-out;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &:hover, &:focus, &:active {
+    span {
+
+      &:after {
+        height: 1px;
+        background: $primary-color;
+        bottom: -3px;
+        left: 0;
+      }
+    }
+  }
+}
+
+/* LINK ANIMATION */
+@mixin link-animation-only-menu() {
+  text-decoration: none !important;
+
+  span {
+    position: relative;
+
+    &:before {
+      content: '';
+      transition: all .4s ease-in-out;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &:hover, &:focus, &:active {
+    span {
+
+      &:before {
+        @media (min-width: $mobileBreakpointMin) {
+          height: 9px;
+          background: $alternate-color-bright;
+          top: 10px;
+          left: 0;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

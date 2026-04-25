@@ -1,0 +1,31 @@
+Vorsteuer für U1 (only ust)
+359.08
+156.84
+1.43
+11.32
+17.31
+35.36
+8.03
+13.16
+76.74
+149.06
+1.08
+16.67
+10.12
+729.39
+38
+24.77
+85.4
+170.44
+= 1904,2
+
+Einnahmen in %
+Event Technik 0%, Summe Netto: 1080 € 
+Werbeagentur 0%, Summe Netto: 113.03 €
+Event Technik 20%, Summe Netto: 2768.56 € | Summe UST: 553.71 € | SUMME BRUTTO: 3322.27 €
+Gast Catering 20%, Summe Netto: 9491.31 € | Summe UST: 1898.26 € | SUMME BRUTTO: 11389.57 €|
+Werbeagentur 20%, Summe Netto: 3258.08 € | Summe UST: 651.62 € | SUMME BRUTTO: 3909.7 €|
+
+0% = 1 193,03
+20% = 18 621,54 / netto 15517,95
+

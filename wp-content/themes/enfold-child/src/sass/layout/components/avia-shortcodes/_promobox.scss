@@ -1,0 +1,499 @@
+.pc_promo_box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  &__item {
+    padding: 0 16px;
+    width: 100%;
+
+    @include media-breakpoint-down(md) {
+      &:nth-child(even) {
+        margin-top: 64px;
+      }
+    }
+
+    &:nth-child(2) {
+      @include media-breakpoint-down(md) {
+        margin-top: 64px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-top: 32px;
+      @include media-breakpoint-down(md) {
+        margin-top: 64px;
+      }
+    }
+
+    &__wrapper {
+      padding-top: 16px;
+
+      @include media-breakpoint-up(md) {
+        padding: 48px;
+      }
+
+      height: 100%;
+
+      @include media-breakpoint-down(md) {
+        max-width: unset;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+      }
+
+      @include media-breakpoint-down(md) {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        padding-bottom: 32px;
+
+        &__content {
+          background-size: 120px 120px !important;
+          background-position: left top !important;
+          min-height: 100% !important;
+          width: 80% !important;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        &__content {
+          width: 100% !important;
+        }
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+
+        &__headline {
+          font-weight: bold;
+          line-height: 1;
+          letter-spacing: normal;
+          color: var(--neutral-0) !important;
+          margin-bottom: 0 !important;
+
+          @include media-breakpoint-down(md) {
+            font-size: rfs-value(30px) !important;
+          }
+        }
+
+        &__text {
+          font-weight: 500;
+          line-height: 1.5;
+          letter-spacing: -0.16px;
+          color: var(--neutral-800);
+
+          @include media-breakpoint-down(md) {
+            font-size: rfs-value(16px) !important;
+          }
+        }
+
+        &__link_container {
+          grid-row-gap: 12px;
+          display: flex;
+          flex-wrap: wrap;
+
+          @include media-breakpoint-down(md) {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__link {
+              width: auto !important;
+            }
+          }
+
+          &.avia-color-white {
+            //box-shadow: 0 2px 4px -1px rgba(5, 6, 5, 0.1) !important;
+          }
+
+          &__link {
+            font-family: var(--fs-tt-firs-neue);
+            font-size: rfs-value(20px);
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: -0.2px;
+            color: var(--neutral-800);
+            padding: 15px 20px;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+
+            &:first-child {
+              margin-right: 12px;
+            }
+
+
+            span {
+              display: flex;
+              flex-direction: row-reverse;
+
+              &:before {
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      &__content--background-small {
+        .pc_promo_box__item__wrapper__content__text,
+        .pc_promo_box__item__wrapper__content__headline,
+        .pc_promo_box__item__wrapper__content__link_container {
+          width: calc(100% - 160px);
+
+          @media (max-width: 1050px) {
+            max-width: 500px !important;
+            width: 100% !important;
+          }
+
+          @include media-breakpoint-down(sm) {
+            max-width: 100% !important;
+          }
+        }
+      }
+
+      &__content--background-default {
+        .pc_promo_box__item__wrapper__content__text,
+        .pc_promo_box__item__wrapper__content__headline,
+        .pc_promo_box__item__wrapper__content__link_container {
+          width: calc(100% - 216px);
+
+          @media (max-width: 1050px) {
+            max-width: 500px !important;
+            width: 100% !important;
+          }
+
+          @include media-breakpoint-down(sm) {
+            max-width: 100% !important;
+          }
+        }
+      }
+
+      &__content--background-big {
+        .pc_promo_box__item__wrapper__content__text,
+        .pc_promo_box__item__wrapper__content__headline,
+        .pc_promo_box__item__wrapper__content__link_container {
+          width: calc(100% - 362px);
+
+          @include media-breakpoint-down(md) {
+            width: 100% !important;
+            max-width: 500px !important;
+          };
+
+          @include media-breakpoint-down(sm) {
+            max-width: 100% !important;
+          }
+        }
+      }
+    }
+
+    &__wrapper--color-green {
+      background-color: #05a570;
+    }
+
+    &__wrapper--color-purple {
+      background-color: var(--brand-secondary-purple-500);
+    }
+
+    &__wrapper--color-turquoise {
+      background-color: var(--brand-secondary-blue-500);
+    }
+
+    &__wrapper--color-red {
+      background-color: var(--brand-secondary-red-500);
+    }
+
+    &__wrapper--color-blue {
+      background-color: var(--brand-secondary-blue-500);
+    }
+
+
+  }
+
+  &.pc_promo_box__item--img-full {
+    .pc_promo_box__item__wrapper--color-img {
+      .pc_promo_box__item__wrapper__content__headline  {
+        padding-top: 0 !important;
+      }
+    }
+  }
+
+  &__item--size-big {
+    .pc_promo_box__item__wrapper {
+      @include media-breakpoint-up(md) {
+        min-height: 400px;
+      }
+    }
+
+    .pc_promo_box__item__wrapper__content__headline {
+      max-width: 640px;
+
+      @include media-breakpoint-down(md) {
+        padding-top: 144px !important;
+      }
+    }
+
+    .pc_promo_box__item__wrapper__content__text {
+      max-width: 640px;
+    }
+
+    &.pc_promo_box__item--hero-heading,
+    &.pc_promo_box__item--h1-heading {
+      .pc_promo_box__item__wrapper {
+        @include media-breakpoint-up(md) {
+          padding-top: 80px !important;
+          padding-bottom: 80px !important;
+          min-height: 464px;
+        }
+
+        @include media-breakpoint-down(md) {
+          padding-top: 40px !important;
+          padding-bottom: 40px !important;
+        }
+
+        .pc_promo_box__item__wrapper__content__headline {
+          max-width: 864px;
+
+          @include media-breakpoint-down(md) {
+            padding-top: 144px !important;
+          }
+        }
+      }
+    }
+  }
+
+  &__item--size-default {
+    width: 58%;
+
+    .pc_promo_box__item__wrapper {
+      @include media-breakpoint-up(md) {
+        min-height: 248px;
+      }
+    }
+
+    @include media-breakpoint-down(xl) {
+      width: 50%;
+    }
+
+    @media (max-width: 1050px) {
+      .pc_promo_box__item__wrapper__content {
+        .pc_promo_box__item__wrapper__content__headline {
+          padding-top: 144px !important;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    .pc_promo_box__item__wrapper {
+
+      @include media-breakpoint-down(md) {
+        padding-top: 24px !important;
+      }
+
+      @include media-breakpoint-up(md) {
+        padding: 40px 40px 40px 36px !important;
+      }
+    }
+    .pc_promo_box__item__wrapper__content__text,
+    .pc_promo_box__item__wrapper__content__headline {
+      max-width: 468px;
+    }
+  }
+
+  .pc_promo_box__item--size-small {
+    width: 42%;
+
+    .pc_promo_box__item__wrapper {
+      @include media-breakpoint-up(md) {
+        padding: 40px 40px 40px 36px !important;
+        min-height: 192px;
+      }
+    }
+
+    @include media-breakpoint-down(xl) {
+      width: 50%;
+    }
+
+    @media (max-width: 1050px) {
+      .pc_promo_box__item__wrapper__content {
+        .pc_promo_box__item__wrapper__content__headline {
+          padding-top: 144px !important;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      //padding-top: 24px !important;
+    }
+  }
+}
+.pc_promo_box {
+  .pc_promo_box__item--size-small,
+  .pc_promo_box__item--size-default {
+
+    .pc_promo_box__item__wrapper__content {
+      @media (min-width: 768px) and (max-width: 1050px) {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 1050px) {
+      //padding-bottom: 32px;
+
+      .pc_promo_box__item__wrapper__content {
+        background-size: 120px 120px !important;
+        background-position: left top !important;
+        min-height: 100% !important;
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.pc_promo_box {
+  @include media-breakpoint-up(md) {
+    .pc_promo_box__item__wrapper__content__headline + .pc_promo_box__item__wrapper__content__text {
+      margin-top: 16px !important;
+    }
+
+    .pc_promo_box__item__wrapper__content__text + .pc_promo_box__item__wrapper__content__link_container {
+      margin-top: 20px !important;
+    }
+
+    .pc_promo_box__item__wrapper__content__headline + .pc_promo_box__item__wrapper__content__link_container {
+      margin-top: 24px !important;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .pc_promo_box__item__wrapper__content__headline + .pc_promo_box__item__wrapper__content__text {
+      margin-top: 12px !important;
+    }
+
+    .pc_promo_box__item__wrapper__content__text + .pc_promo_box__item__wrapper__content__link_container {
+      margin-top: 24px !important;
+    }
+
+    .pc_promo_box__item__wrapper__content__headline + .pc_promo_box__item__wrapper__content__link_container {
+      margin-top: 24px !important;
+    }
+  }
+}
+
+.pc_promo_box {
+  .pc_promo_box__item--img-full {
+    .pc_promo_box__item__wrapper--color-img {
+      position: relative;
+
+      &:before {
+        content: '';
+        box-shadow: 0 18px 24px -12px rgba(5, 6, 5, 0.15);
+        background-image: linear-gradient(75deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 53%), linear-gradient(to bottom, rgba(5, 6, 5, 0.33), rgba(5, 6, 5, 0.33));
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .pc_promo_box__item__wrapper__content__text {
+        color: var(--neutral-0) !important;
+        z-index: 2;
+      }
+
+      .pc_promo_box__item__wrapper__content__link_container {
+        z-index: 2;
+      }
+
+      .pc_promo_box__item__wrapper__content__headline {
+        z-index: 2;
+
+        @media (max-width: 1050px) {
+          padding-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.pc_promo_box {
+
+  .pc_promo_box__item--img-full {
+    .pc_promo_box__item__wrapper.pc_promo_box__item__wrapper--color-img {
+      min-height: 100% !important;
+    }
+  }
+
+  .pc_promo_box__item--size-big {
+
+    &.pc_promo_box__item--img-full {
+      .pc_promo_box__item__wrapper.pc_promo_box__item__wrapper--color-img {
+        @include media-breakpoint-up(md) {
+          padding-top: 48px !important;
+
+          &:before {
+            transform: translate(-48px, -48px);
+          }
+        }
+
+        @include media-breakpoint-down(md) {
+          padding-top: 32px !important;
+
+          &:before {
+            transform: translate(-24px, -32px);
+          }
+        }
+      }
+
+      &.pc_promo_box__item--h1-heading,
+      &.pc_promo_box__item--hero-heading {
+        .pc_promo_box__item__wrapper.pc_promo_box__item__wrapper--color-img {
+          @include media-breakpoint-up(md) {
+            padding-top: 80px !important;
+
+            &:before {
+              transform: translate(-48px, -80px);
+            }
+          }
+
+          @include media-breakpoint-down(md) {
+            padding-top: 40px !important;
+
+            &:before {
+              transform: translate(-24px, -40px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pc_promo_box__item--size-default, .pc_promo_box__item--size-small {
+    .pc_promo_box__item__wrapper.pc_promo_box__item__wrapper--color-img {
+      @include media-breakpoint-up(md) {
+        padding-top: 40px !important;
+
+        &:before {
+          transform: translate(-36px, -40px);
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        padding-top: 32px !important;
+
+        &:before {
+          transform: translate(-24px, -32px);
+        }
+      }
+    }
+  }
+}
+

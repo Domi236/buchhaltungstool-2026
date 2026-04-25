@@ -1,0 +1,332 @@
+%avia-button {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  font-family: var(--fs-tt-firs-neue);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -.01em;
+  margin-top: 2rem;
+  border-radius: 6px;
+  transition: all ease 250ms;
+  opacity: 1 !important;
+  min-width: auto !important;
+  box-shadow: 0 2px 4px -1px rgba(5, 6, 5, 0.1);
+  @include media-breakpoint-down(md) {
+    margin-top: 1.5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:focus-visible {
+    box-shadow: 0 0 0 .25rem var(--brand-secondary-blue-600) !important;
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(.05rem);
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body div .avia-button {
+  @extend %avia-button;
+}
+
+.avia-button .avia_button_icon {
+  left: 0;
+  margin-right: .5em;
+  line-height: 1.5;
+}
+
+.avia-button .avia_button_icon.avia_button_icon_right {
+  left: 0;
+  margin-left: .5em;
+  margin-right: 0;
+}
+
+/**
+ * button sizes
+ */
+
+.avia-button.avia-size-small,
+%avia-size-small {
+  font-size: rfs-value(16px);
+  padding: 12px 16px;
+}
+
+.avia-button.avia-size-large,
+%avia-size-large {
+  font-size: dynamic-size(16, 20);
+  padding: 14px 20px;
+  @include media-breakpoint-down(md) {
+    padding: 11px 16px;
+  }
+}
+
+%avia-size-medium {
+  font-size: rfs-value(16px);
+  //padding: 11px 19px;
+  padding: 17px 20px;
+  @include media-breakpoint-down(md) {
+    padding: 11px 16px;
+  }
+}
+
+.avia-button.avia-size-medium {
+  @extend %avia-size-medium;
+}
+
+%avia-size-x-large,
+.avia-button.avia-size-x-large {
+  font-size: dynamic-size(16, 20);
+}
+
+/**
+ * theme color button
+ */
+%avia-color-theme-color {
+  color: var(--neutral-800);
+  background-color: var(--brand-secondary-yellow-500);
+  border: 1px solid var(--brand-secondary-yellow-600) !important;
+}
+
+%avia-color-theme-color-hover {
+  color: var(--neutral-0);
+  background-color: var(--neutral-800);
+  border: 1px solid var(--neutral-900) !important;
+}
+
+#top .avia-button.avia-color-theme-color {
+  @extend %avia-color-theme-color;
+
+  &:hover {
+    @extend %avia-color-theme-color-hover;
+  }
+}
+
+#top {
+  .green_section {
+    .avia-button.avia-color-theme-color {
+      box-shadow: 0 2px 4px -1px rgba(5, 6, 5, 0.1);
+
+      &:hover {
+        box-shadow: 0 3px 6px -1px rgba(5, 6, 5, 0.15);
+      }
+    }
+  }
+}
+
+/**
+ * dark color button
+ */
+%dark-color-button {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--neutral-800);
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+%dark-color-button-hover {
+  color: var(--neutral-600);
+  border: none !important;
+}
+
+#top .avia-button.avia-color-dark {
+  @extend %dark-color-button;
+
+  &:hover {
+    @extend %dark-color-button-hover;
+  }
+}
+
+/**
+ * light button
+ */
+%light-color-button {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  color: var(--neutral-0);
+}
+
+%light-color-button-hover {
+  color: var(--neutral-600);
+}
+
+#top .avia-button.avia-color-light {
+  @extend %light-color-button;
+
+  &:hover {
+    @extend %light-color-button-hover;
+  }
+}
+
+/**
+ * white color button
+ */
+%white-color-button {
+  border: solid 1px var(--neutral-200);
+  background-color: white;
+  box-shadow: 0 2px 4px -1px rgba(5, 6, 5, 0.1);
+}
+
+%white-color-button-hover {
+  color: white;
+  box-shadow: 0 3px 6px -1px rgba(5, 6, 5, 0.15);
+}
+
+#top .avia-button.avia-color-white {
+  @extend %white-color-button;
+
+  &:hover {
+    @extend %white-color-button-hover;
+  }
+
+  &.current-page {
+    @extend %white-color-button-hover;
+  }
+}
+
+#top #wrap_all .header_color .av-menu-button-colored > a .avia-menu-text,
+#top #wrap_all .custom_footer__contact_box .menu-item > a,
+#top #wrap_all .custom_footer__logo_link_box .menu-item > a,
+#top #wrap_all .custom_footer__scrolled_bottom_box .menu-item > a {
+  @extend %avia-button;
+  @extend %avia-size-small;
+  @extend %avia-color-theme-color;
+  margin-top: 0;
+
+  &:hover {
+    @extend %avia-color-theme-color-hover;
+  }
+}
+
+#top #wrap_all .header_color .av-menu-button-colored > a {
+  &:hover {
+    .avia-menu-text {
+      @extend %avia-color-theme-color-hover;
+    }
+  }
+  &:focus {
+    .avia-menu-text {
+      box-shadow: 0 0 0 .25rem var(--brand-secondary-blue-600) !important;
+      outline: none;
+    }
+  }
+}
+
+/**
+ * Button row
+ */
+.avia-buttonrow-wrap[class*="el_after"] {
+  margin-top: 1rem;
+}
+
+.avia-buttonrow-left.flex-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    column-gap: 32px;
+  }
+
+  &:first-child {
+    margin-top: -8px;
+    @include media-breakpoint-up(md) {
+      margin-top: -16px !important;
+    }
+  }
+
+  .avia-button {
+    width: calc(50% - 4px);
+    margin: 8px 0 0 0 !important;
+    flex-shrink: 0;
+    padding-top: 1rem;
+    @include media-breakpoint-up(md) {
+      width: calc(25% - 24px);
+      margin: 16px 0 0 0 !important;
+    }
+  }
+
+  .avia_button_icon {
+    height: 30px;
+
+    &:before {
+      font-size: rfs-value(20px);
+      line-height: 1;
+    }
+  }
+}
+
+.avia-buttonrow-left.flex-btn-row.flex-btn-row-6 {
+
+  @include media-breakpoint-down(lg) {
+    column-gap: 4px;
+    margin-top: -4px;
+  }
+
+  &:first-child {
+    margin-top: calc(-4px - 16px) !important;
+    @include media-breakpoint-up(lg) {
+      margin-top: calc(-16px - 32px) !important;
+    }
+  }
+
+  .avia-button {
+    @include media-breakpoint-down(lg) {
+      margin-top: 4px !important;
+    }
+    @include media-breakpoint-up(lg) {
+      width: calc(16.66666667% - 26.66666665px);
+    }
+  }
+}
+
+.avia-buttonrow-wrap.avia_button_icon_top {
+  .avia-button.avia-icon_select-yes-left-icon {
+    text-align: center !important;
+
+    .avia_button_icon {
+      display: block;
+      margin: 0;
+    }
+  }
+}
+
+
+/* Individual button margins */
+
+body div {
+
+  .el_after_pc_contenthub--slider .avia-button {
+    margin-top: 3rem;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+body div {
+
+  div[class*="slider_container"] + .avia-button-wrap .avia-button {
+    margin-top: 3rem;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,2881 @@
+[
+    {
+        "key": "group_partycrowd_sender_profiles",
+        "title": "Absender Profile (Optionen)",
+        "fields": [
+            {
+                "key": "field_sender_profiles_repeater",
+                "label": "Absender Profile",
+                "name": "sender_profiles",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Hier kannst du verschiedene Firmen (Party Crowd, Buehnenbau, etc.) anlegen.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 0,
+                "collapsed": "field_sender_company_name",
+                "button_label": "Profil hinzufügen",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_69ec60fdccdcd",
+                        "label": "Logo",
+                        "name": "logo",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "allow_in_bindings": 0,
+                        "preview_size": "medium",
+                        "parent_repeater": "field_sender_profiles_repeater"
+                    },
+                    {
+                        "key": "field_sender_company_name",
+                        "label": "Firmenname",
+                        "name": "company_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "50%",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_sender_profiles_repeater"
+                    },
+                    {
+                        "key": "field_sender_website",
+                        "label": "Website",
+                        "name": "website",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "50%",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_sender_profiles_repeater"
+                    },
+                    {
+                        "key": "field_69ec69cb469e6",
+                        "label": "Mail",
+                        "name": "pc_mail",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_sender_profiles_repeater"
+                    },
+                    {
+                        "key": "field_sender_address",
+                        "label": "Anschrift",
+                        "name": "address",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "Strasse, PLZ, Ort",
+                        "required": 1,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "rows": 3,
+                        "default_value": "",
+                        "new_lines": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_sender_profiles_repeater"
+                    },
+                    {
+                        "key": "field_sender_extra_info",
+                        "label": "Zusatz-Infos (Steuern\/UID)",
+                        "name": "extra_info",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "Steuernummer, UID, Inhaber, Bankdaten etc.",
+                        "required": 0,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "rows": 4,
+                        "default_value": "",
+                        "new_lines": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_sender_profiles_repeater"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "sender-profiles"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_68cee96cb3b0c",
+        "title": "ACF for Sliced Invoices",
+        "fields": [
+            {
+                "key": "field_68cee96dd716c",
+                "label": "Client - Invoice Relationship",
+                "name": "client_invoice_relationship_sliced",
+                "aria-label": "",
+                "type": "bidirectional",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "relation_field_name": "",
+                "post_type": [
+                    "clients"
+                ],
+                "post_status": "",
+                "taxonomy": "",
+                "filters": [
+                    "search"
+                ],
+                "return_format": "id",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "elements": "",
+                "bidirectional": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "sliced_invoice"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_643fedc7c12f9",
+        "title": "Clients",
+        "fields": [
+            {
+                "key": "field_6448d03239ad6",
+                "label": "Company Name",
+                "name": "clients_company_name",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_64516b9d5f99c",
+                "label": "Client Number",
+                "name": "clients_client_number",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6446a592e5ea4",
+                "label": "Customer Agent (optional)",
+                "name": "clients_customer_agent",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6446a5d2e5ea5",
+                "label": "Phone Number (optional)",
+                "name": "clients_phone_number",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6446a5eae5ea6",
+                "label": "Mail (optional)",
+                "name": "clients_mail",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_643fef8d43b7c",
+                "label": "UID Number (optional)",
+                "name": "clients_uid_number",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_643fefa843b7d",
+                "label": "Tax Number (optional)",
+                "name": "clients_tax_number",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_68f0e53c44462",
+                "label": "Firmenbuchnummer (optional)",
+                "name": "clients_company_book_number",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_643ff0a2b94f2",
+                "label": "Bank Details",
+                "name": "clients_bank_details",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_643ff10fb94f5",
+                        "label": "Bank Name",
+                        "name": "clients_bank_details_bank_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643ff148b94f6",
+                        "label": "Account Owner",
+                        "name": "clients_account_owner",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643ff0c0b94f3",
+                        "label": "IBAN",
+                        "name": "clients_bank_details_iban",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "70",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643ff101b94f4",
+                        "label": "BIC",
+                        "name": "clients_bank_details_bic",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_643fede4adf43",
+                "label": "Company Adress",
+                "name": "clients_company_adress",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_643fee45adf45",
+                        "label": "Country",
+                        "name": "clients_company_country",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643fee2fadf44",
+                        "label": "Postal Code",
+                        "name": "clients_company_postal_code",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643fee58adf46",
+                        "label": "Town",
+                        "name": "clients_company_town",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643fee8badf48",
+                        "label": "Street",
+                        "name": "clients_company_street",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "70",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643fee79adf47",
+                        "label": "House Number",
+                        "name": "clients_company_number",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_643feeffadf49",
+                "label": "Shipping Adress (optional)",
+                "name": "clients_shipping_adress",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_643feeffadf4a",
+                        "label": "Country",
+                        "name": "clients_shipping_country",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643feeffadf4b",
+                        "label": "Postal Code",
+                        "name": "clients_shipping_postal_code",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643feeffadf4c",
+                        "label": "Town",
+                        "name": "clients_shipping_town",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643feeffadf4d",
+                        "label": "Street",
+                        "name": "clients_shipping_street",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "70",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643feeffadf4e",
+                        "label": "House Number",
+                        "name": "clients_shipping_house_number",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_644008f23d6d8",
+                "label": "Documents Relationship",
+                "name": "clients_documents_relationship",
+                "aria-label": "",
+                "type": "bidirectional",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "relation_field_name": "documents_client_relationship",
+                "post_type": [
+                    "documents"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "id"
+            },
+            {
+                "key": "field_69b914a9679b8",
+                "label": "Client Kürzel",
+                "name": "client_kuerzel",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "clients"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_6447c33e4a701",
+        "title": "Document Products",
+        "fields": [
+            {
+                "key": "field_6447c34b10c07",
+                "label": "Document Products",
+                "name": "documents_article_items",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Row",
+                "sub_fields": [
+                    {
+                        "key": "field_6447c39210c08",
+                        "label": "Product Name",
+                        "name": "documents_article_items_article_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_6447c34b10c07"
+                    },
+                    {
+                        "key": "field_6447c3cd10c09",
+                        "label": "Product Number",
+                        "name": "documents_article_items_article_number",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_6447c34b10c07"
+                    },
+                    {
+                        "key": "field_6447c3cf10c0a",
+                        "label": "Quantity",
+                        "name": "documents_article_items_quantity",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "14",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 1,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": "",
+                        "parent_repeater": "field_6447c34b10c07"
+                    },
+                    {
+                        "key": "field_6447c41c10c0d",
+                        "label": "Item Price Net",
+                        "name": "documents_article_items_price_net_single",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "18",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": "",
+                        "parent_repeater": "field_6447c34b10c07"
+                    },
+                    {
+                        "key": "field_6447c44510c0f",
+                        "label": "Item Price Gross",
+                        "name": "documents_article_items_price_gross",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "14",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": "",
+                        "parent_repeater": "field_6447c34b10c07"
+                    },
+                    {
+                        "key": "field_6447c40e10c0c",
+                        "label": "Tax Rate",
+                        "name": "documents_article_items_tax_rate",
+                        "aria-label": "",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "18",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "0": "0",
+                            "9": "9",
+                            "10": "10",
+                            "11": "11",
+                            "13": "13",
+                            "19": "19",
+                            "20": "20"
+                        },
+                        "default_value": 20,
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": "",
+                        "create_options": 0,
+                        "save_options": 0,
+                        "parent_repeater": "field_6447c34b10c07"
+                    },
+                    {
+                        "key": "field_6447c43510c0e",
+                        "label": "Currency",
+                        "name": "documents_article_items_currency",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "17",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "€",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_6447c34b10c07"
+                    },
+                    {
+                        "key": "field_66d7404cf4378",
+                        "label": "Privatnutzung",
+                        "name": "documents_article_items_privatnutzung",
+                        "aria-label": "",
+                        "type": "range",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "18",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "step": 25,
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_6447c34b10c07"
+                    },
+                    {
+                        "key": "field_6447c45210c10",
+                        "label": "Description",
+                        "name": "documents_article_items_article_description",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "",
+                        "parent_repeater": "field_6447c34b10c07"
+                    }
+                ],
+                "rows_per_page": 20
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "documents"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_6446cf0dab514",
+        "title": "Documents",
+        "fields": [
+            {
+                "key": "field_66d728d67ed42",
+                "label": "Document file",
+                "name": "documents_file",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_643dc1bb5df99",
+                "label": "Document Type",
+                "name": "documents_document_type",
+                "aria-label": "",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "document_cat",
+                "field_type": "radio",
+                "allow_null": 0,
+                "add_term": 1,
+                "save_terms": 1,
+                "load_terms": 1,
+                "return_format": "id",
+                "multiple": 0,
+                "bidirectional_target": []
+            },
+            {
+                "key": "field_66d955d1d354c",
+                "label": "Verkäufer",
+                "name": "documents_verkaufer",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_643dc1bb5df99",
+                            "operator": "==",
+                            "value": "3"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Amazon": "Amazon",
+                    "GPL Times": "GPL Times",
+                    "BMB Bodlak Modellbau GmbH": "BMB Bodlak Modellbau GmbH",
+                    "Garage David Alscher": "Garage David Alscher",
+                    "WKO": "WKO",
+                    "Haude": "Haude",
+                    "Jetbrains": "Jetbrains",
+                    "Trusted Shops": "Trusted Shops",
+                    "Vor": "Vor",
+                    "Bergfreunde": "Bergfreunde",
+                    "Wifi": "Wifi",
+                    "Alphaphone": "Alphaphone",
+                    "Udemy": "Udemy",
+                    "Playstore": "Playstore",
+                    "Forsthuber Anwalt": "Forsthuber Anwalt",
+                    "Long Life LED": "Long Life LED",
+                    "Akrobat": "Akrobat",
+                    "digistore": "digistore",
+                    "DTF-Transferdruck": "DTF-Transferdruck",
+                    "Evato Elements": "Evato Elements",
+                    "GPL PLus": "GPL PLus",
+                    "Wordans": "Wordans",
+                    "Bizay": "Bizay",
+                    "Appsumo": "Appsumo",
+                    "Hetzner": "Hetzner",
+                    "Google": "Google",
+                    "Spusu": "Spusu",
+                    "Klangfarbe": "Klangfarbe",
+                    "ÖBB": "ÖBB",
+                    "Musik Tirol": "Musik Tirol",
+                    "Analoge Rechnungen": "Analoge Rechnungen",
+                    "SVS": "SVS",
+                    "Bank": "Bank",
+                    "Verpflegungsgeld": "Verpflegungsgeld",
+                    "Capcut": "Capcut",
+                    "Canva": "Canva",
+                    "ElevenLabs": "ElevenLabs",
+                    "Engelbert Strauss": "Engelbert Strauss",
+                    "Epidemic Sounds": "Epidemic Sounds",
+                    "Flux AI": "Flux AI",
+                    "Forsthuber": "Forsthuber",
+                    "Hofa College": "Hofa College",
+                    "Musik Store": "Musik Store",
+                    "Nexus Ai": "Nexus Ai",
+                    "Roadieworks": "Roadieworks",
+                    "SmartShort": "SmartShort",
+                    "Würth": "Würth",
+                    "VidIq": "VidIq",
+                    "Fiver": "Fiver",
+                    "Bettmer": "Bettmer",
+                    "Jugendtreff": "Jugendtreff",
+                    "Diätengeld\/Kilometer": "Diätengeld\/Kilometer",
+                    "Gemeinde Wiener Neudorf": "Gemeinde Wiener Neudorf",
+                    "Strom\/Gas": "Strom\/Gas",
+                    "Versicherungen Ergo\/Merkur\/Helvetica etc.": "Versicherungen Ergo\/Merkur\/Helvetica etc.",
+                    "Honorarnote": "Honorarnote"
+                },
+                "default_value": "",
+                "return_format": "label",
+                "allow_null": 0,
+                "other_choice": 1,
+                "save_other_choice": 1,
+                "allow_in_bindings": 1,
+                "layout": "vertical"
+            },
+            {
+                "key": "field_66d73ee99b283",
+                "label": "Steuersatz",
+                "name": "documents_steuersatz",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_6442593a41953",
+                            "operator": "==",
+                            "value": "111"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "12",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 20,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": 0,
+                "max": 20,
+                "step": ""
+            },
+            {
+                "key": "field_66d96843909ed",
+                "label": "Abrechnungs Jahr",
+                "name": "documents_year",
+                "aria-label": "",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "10",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 2024,
+                "min": 2020,
+                "max": 2030,
+                "allow_in_bindings": 1,
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_64404047c5feb",
+                "label": "Gewerbeschein",
+                "name": "documents_gewerbeschein",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "event_management": "Event Management",
+                    "event_technik": "Event Technik",
+                    "catering": "Catering",
+                    "werbe_agentur": "Werbeagentur"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "label",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_66d6f443c2194",
+                "label": "Abschreibungsart",
+                "name": "documents_abschreibungsart",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "keine-ausgabe": "Keine Ausgabe",
+                    "werbekosten": "Werbekosten",
+                    "betriebsausgaben": "Betriebsausgaben",
+                    "reisepauschale": "Verpflegungspauschale\/Reisepauschale",
+                    "firmenessen": "Geschäftsessen",
+                    "arztkosten": "Arztkosten\/Medikamente",
+                    "geschenke": "Geschenke mit werbezweck",
+                    "kammerumlage": "Kammerumlage",
+                    "svs": "Sozialversicherung",
+                    "vorsorgeleistung": "Vorsorgeleistung",
+                    "Fremdpersonal": "Fremdpersonal",
+                    "Eigenpersonal": "Eigenpersonal",
+                    "miete": "Miete\/Pachten\/Leasing",
+                    "lizensgebuhren": "Lizenzgebühren\/Provision",
+                    "waren": "Waren",
+                    "presentaion": "Präsentation\/Werbung",
+                    "weiterbildung": "weiterbildung",
+                    "ticket": "öffi ticket",
+                    "steuerberater": "steuerberater",
+                    "sprit": "sprit",
+                    "kfz-kosten": "kfz-kosten",
+                    "Firmenfeier-Werbeveranstaltung": "Firmenfeier-Werbeveranstaltung",
+                    "Anlagegueter": "Anlagegüter",
+                    "degressive-abschreibung": "Degressive Abschreibung Anlagegüter"
+                },
+                "default_value": "keine-ausgabe",
+                "return_format": "label",
+                "allow_null": 0,
+                "other_choice": 0,
+                "allow_in_bindings": 1,
+                "layout": "horizontal",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_6892ed6a8fdbb",
+                "label": "KIlometergeld Counter",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "reisepauschale"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<div>\r\n<p class=\"kilometergeld_unversteuert\">Kilometerstand unversteuert dieses Jahr: <span><\/span><p>\r\n<p class=\"kilometergeld_versteuert\">Kilometerstand versteuert dieses Jahr: <span><\/span><p>\r\n<\/div>",
+                "new_lines": "",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6892f9c43f23c",
+                "label": "Werbekosten Infos",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "werbekosten"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "!!!! Wichtig: nur für Arbeitnehmer !!!\r\nWerbungskosten sind all jene Kosten die anfallen, um Einkünfte zu ermöglichen oder dauerhaft zu sichern.  \r\nKontoführungsgebühren entweder 16€ pauschal pro Jahr oder wenn mehr genau ausrechnen - muss aber überwiegend für die Arbeit sein.\r\n- Internet & Telefon\r\n- Rechtsschutzversicherung\r\n- Beiträge zu Berufsverbänden, Gewerkschaften & Spenden\r\n- Aufwendungen für Arbeitsmittel\r\n- Dienstreisen & Fortbildungskosten\r\n- Bewerbungskosten\r\n- Verpflegungsmehraufwendungen\r\n- Vorsorgeaufwendunge\r\n- Sonderausgaben\r\n- Fahrtkosten\r\n- Home Office",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68931104d23e8",
+                "label": "Kammerumlage eintragung",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "kammerumlage"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "u1 - An Kammerumlage wurde für 2023 entrichtet: 451,70",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68930ee1a5590",
+                "label": "Öffi Tickets infos",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "ticket"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Pauschale von 50% der Kosten einer Wochen-, Monats- oder Jahreskarte für Massenbeförderungsmittel - (Kennzahl 9165)",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68930a54b2d70",
+                "label": "Lizenzgebühren",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "lizensgebuhren"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Provisionen an Dritte, Lizenzgebühren\r\nEKR 754-757, 748-749 - (Kennzahl 9190)",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68930fd2a5591",
+                "label": "Miete, leasing",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "miete"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Miet- und Pachtaufwand, Leasing\r\nEKR 740-743, 744-747 - (Kennzahl 9180)\r\n\r\nAusgaben Miete und Pacht sowie Leasing\r\nKeine Aufwendungen\/Ausgaben für Beheizung, Beleuchtung, für die Reinigung gemieteter Räume sowie Betriebskosten",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68930a097f618",
+                "label": "Krankheitskosten",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "arztkosten"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Außergewöhnliche Belastungen mit Selbstbehalt(abzüglich erhaltener Ersätze oder Vergütungen)\r\nKrankheitskosten (inkl. Zahnersatz) - (Kennzahl 730)",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_689309dda236b",
+                "label": "Steuerberater",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "steuerberater"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Steuerberatungskosten - (Kennzahl 460)",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6893103596957",
+                "label": "Eigene Pflichtversicherungen",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "vorsorgeleistung"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "svs"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Eigene Pflichtversicherungsbeiträge, Beiträge zu Versorgungs- undUnterstützungseinrichtungen und Beiträge zur Selbständigenvorsorge - (Kennzahl 9225)",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_689316f98730f",
+                "label": "Eigenpersonal Aufwand",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "Eigenpersonal"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Personalaufwand (\"eigenes Personal\")\r\nEKR 60-68 - 9120 \r\n\r\nin Kennzahl 9120 sind Ausgaben für Löhne und\r\nGehälter sowie Lohnnebenkosten zu erfassen.\r\n\r\n\r\nLohnnebenkosten sind zusätzliche Kosten, die Arbeitgeber neben dem Bruttolohn eines Arbeitnehmers für dessen Beschäftigung aufwenden müssen. Diese Kosten sind nicht im Gehaltszettel des Arbeitnehmers enthalten, werden aber von den Unternehmen getragen und dienen zur Finanzierung des Sozialversicherungssystems. \r\n\r\nErläuterung:\r\nLohnnebenkosten umfassen im Wesentlichen die Arbeitgeberbeiträge zu verschiedenen Sozialversicherungen, wie Kranken-, Renten-, Arbeitslosen- und Unfallversicherung. Diese Beiträge werden direkt an die jeweiligen Versicherungsträger abgeführt und kommen den Arbeitnehmern indirekt zugute, indem sie wichtige soziale Risiken wie Krankheit, Arbeitslosigkeit und Alter absichern. \r\n\r\nZusammensetzung:\r\nZu den Lohnnebenkosten gehören unter anderem: \r\nSozialversicherungsbeiträge:\r\nArbeitgeberanteile zur Kranken-, Renten-, Arbeitslosen- und Unfallversicherung. \r\n\r\nUmlagen:\r\nBeiträge zu verschiedenen Umlagen wie beispielsweise die Umlage U1 (Lohnfortzahlung im Krankheitsfall) und U2 (Mutterschaftsaufwendungen). \r\n\r\nWeitere Abgaben:\r\nJe nach Region und Branche können auch weitere Abgaben wie die Kommunalsteuer oder Beiträge zum Familienlastenausgleichsfonds (FLAF) zu den Lohnnebenkosten zählen. \r\n\r\nFreiwillige Leistungen:\r\nZusätzliche Leistungen, die Arbeitgeber freiwillig gewähren, wie z.B. Weihnachts- oder Urlaubsgeld, können ebenfalls zu den Lohnnebenkosten gezählt werden. \r\n\r\nBedeutung:\r\nLohnnebenkosten sind ein wesentlicher Kostenfaktor für Unternehmen und können einen erheblichen Anteil an den Gesamtkosten der Beschäftigung ausmachen. Sie sind jedoch auch ein wichtiger Bestandteil des Sozialversicherungssystems und tragen zur Absicherung der Arbeitnehmer bei. \r\n\r\nBeispiel:\r\nWenn ein Arbeitnehmer ein Bruttogehalt von 3.000 Euro erhält, können die Lohnnebenkosten zusätzlich 20% oder mehr dieses Betrags ausmachen, was bedeutet, dass das Unternehmen insgesamt über 3.600 Euro für diesen Mitarbeiter aufwenden muss",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68931b5c9a141",
+                "label": "Fremdpersonal infos",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "Fremdpersonal"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Beigestelltes Personal (Fremdpersonal) und Fremdleistungen\r\nEKR 570-579, 581, 750-753 | 9110\r\n\r\nAusgaben Honorare für Helfer und Dienstleister („Fremdpersonal“)\r\n\r\nZ. B. Leistungen von Freelancern zugekauft\r\n\r\nNicht einzutragen sind jene Ausgaben für Fremdpersonal, die als Herstellungskosten von Anlagegütern zu „aktivieren“  (in das Anlageverzeichnis) sind.",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68932e2ab0da8",
+                "label": "Repräsentatives",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "firmenessen"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "geschenke"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "Firmenfeier-Werbeveranstaltung"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "presentaion"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Werbe- und Repräsentationsaufwendungen, nicht in den Kennzahlen 9243 bis 9209 zu erfassenden Spenden, Trinkgelder\r\nEKR 765-769 | 9200\r\n\r\nAllgemeines zu Repräsentationsaufwendungen\r\nRepräsentationsaufwendungen iSd EStG (und KStG), sind grundsätzlich steuerlich nicht abzugsfähig. Darunter sind Ausgaben zu verstehen, die zwar im Zusammenhang mit der beruflichen Tätigkeit stehen, jedoch gleichzeitig repräsentativen Charakter aufweisen und geeignet sind, das gesellschaftliche Ansehen des Steuerpflichtigen zu fördern. Typische Beispiele sind Aufwendungen für Theaterbesuche, gesellige Zusammenkünfte und Geschenke an Kunden.\r\n\r\nAuch Bewirtungskosten fallen unter diese Regelung, sofern sie der Repräsentation dienen. Sofern Bewirtungsaufwendungen der Werbung dienen und die betriebliche Veranlassung im Vordergrund steht, können derartige Repräsentationsaufwendungen zur Hälfte abgezogen werden. Bewirtungskosten ohne repräsentativen Charakter sind grundsätzlich vollständig abzugsfähig.\r\n\r\nErtragssteuerliche Kategorien von Bewirtungsaufwendungen\r\nDie steuerliche Abzugsfähigkeit von Bewirtungskosten kann in drei Kategorien unterteilt werden:\r\n\r\nVollständig abzugsfähige Bewirtungsaufwendungen (EStG\/KStG: 100 % abzugsfähig):\r\nBewirtungskosten, die unmittelbar Bestandteil einer Leistung sind oder in engem Zusammenhang damit stehen (z.B. Verpflegungskosten während einer Schulung).\r\nBewirtungskosten mit überwiegend Entgeltcharakter oder nahezu ohne Repräsentationskomponente.\r\nZur Hälfte abzugsfähige Bewirtungsaufwendungen (EStG\/KStG: 50 % abzugsfähig):\r\nBewirtungskosten mit eindeutigem Werbezweck, bei denen die betriebliche Veranlassung überwiegt (z.B. Bewirtung bei Bilanzpressekonferenzen oder betrieblicher Informationsveranstaltungen).\r\nNicht abzugsfähige Bewirtungsaufwendungen (EStG\/KStG: 100 % NICHT abzugsfähig):\r\nKosten für Bewirtungen, die hauptsächlich der Repräsentation dienen (z.B. Arbeitsessen nach einem erfolgreichen Geschäftsabschluss oder Bewirtungen bei gesellschaftlichen Veranstaltungen).\r\nFeiern wie z.B. Dienstjubiläen, Geburtstagsfeiern, zu denen auch Kunden, Berufskollegen und Mitarbeiter eingeladen sind, da sie der privaten Sphäre zuzuordnen sind.\r\nUmsatzsteuerliche Behandlung\r\nFür die umsatzsteuerliche Beurteilung ist die ertragsteuerliche Bewertung maßgeblich. Bewirtungsaufwendungen, die ertragsteuerlich abzugsfähig sind, berechtigen auch zum Vorsteuerabzug. Nicht abzugsfähige Bewirtungsaufwendungen gelten umsatzsteuerlich als „nicht für das Unternehmen“ ausgeführt, weshalb der Vorsteuerabzug ausgeschlossen bleibt.\r\n\r\nPraxistipp\r\nDie steuerliche Anerkennung von Bewirtungsaufwendungen ist oft ein strittiges Thema bei abgabenbehördlichen Prüfungen. Solche Kosten entstehen, wenn ein Unternehmer Kunden, Geschäftspartner oder Mitarbeiter bei Geschäftsessen, Sitzungen oder anderen Veranstaltungen bewirtet. Da diese Ausgaben für ein Unternehmen beträchtlich sein können, sollte für die Anerkennung der Bewirtungskosten als Betriebsausgabe ggf. die Berücksichtigung des Vorsteuerabzug eine detaillierte Dokumentation in folgender Form erfolgen:\r\n\r\nDatum der Bewirtung,\r\nAnlass der Bewirtung,\r\nProdukt- und Leistungsinformationen, die dargelegt wurden, sowie die Eignung dieser Informationen, potenziell zu (neuen) Geschäftsabschlüssen zu führen,\r\nRechnungsaussteller (zB das Restaurant, in dem die Bewirtung stattgefunden hat, oder das Cateringunternehmen, das für die Bewirtung gesorgt hat),\r\nHöhe der Aufwendungen oder Ausgaben, die durch die Bewirtung angefallen sind (dieser Betrag sollte zudem mittels Rechnung belegbar sein),\r\nTeilnehmende Geschäftspartner\r\nVorname und Nachname,\r\nUnternehmen (insb bei Arbeitnehmern oder Vertretern von Geschäftspartnern),\r\nPosition (in welcher Eigenschaft war diese Person anwesend),\r\nBeabsichtigtes Geschäft, das aufgrund der Bewirtung abgeschlossen werden könnte, oder tatsächlich realisiertes Geschäft, das (zumindest mittelbar) aufgrund der Bewirtung abgeschlossen wurde (inkl Datum des Geschäftsabschlusses).\r\nEine sorgfältige Vorbereitung und Dokumentation können helfen, steuerliche Nachteile zu vermeiden und die Abzugsfähigkeit von Bewirtungskosten sicherzustellen. Ein tatsächlicher Geschäftsabschluss infolge der Bewirtung ist jedoch nicht erforderlich, um diese steuerlich anerkennen zu lassen. Der Steuerpflichtige kann die Nachweise in beliebiger Form erbringen, beispielsweise durch einen Vermerk auf dem Beleg. Wichtig ist jedoch, dass für jede einzelne Bewirtung ein separater Nachweis erbracht wird.\r\n\r\nFür Fragen und Unterstützung stehen wir Ihnen jederzeit gerne zur Verfügung  – Ihre Ansprechpartner!",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6893079529405",
+                "label": "Einnahmen",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "keine-ausgabe"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Einkünfte aus selbständiger Arbeit\r\nErträge\/Betriebseinnahmen (Waren-\/Leistungserlöse) ohne solche, die in einer Mitteilung gemäß § 109a erfasst sind - EKR 40-44 - einschließlich\r\nEigenverbrauch (Entnahmewerte von Umlaufvermögen) - (Kennzahl 9040)\r\n\r\nSumme aller Einkünfte aus selbstständiger Arbeit\r\nSumme Kennzahl 320\r\nSumme aus allen Beilagen E1a, E1a-K und E11 sowie den Kennzahlen 321 bis 501 - (Kennzahl 320) \r\nman muss vor allem wissen, dass im Feld 320 die selbst errechneten Einkünfte (Gewinn) einzutragen sind. Das heißt Einnahmen minus allen Ausgaben und SV-Beiträgen. Wenn diese Summe mit den Angaben in E1a übereinstimmen, schluckt das System die Erklärung.\r\n\r\nE1 - Außerbetriebliche Einkunftsarten\r\nSteuerfreie Einkünfte auf Grund völkerrechtlicher Vereinbarungen (z.B.UNO,UNIDO) - (Kennzahl 725)",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68931aae30414",
+                "label": "KFZ Kosten",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "sprit"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "kfz-kosten"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Tatsächliche Kfz-Kosten (ohne AfA, Leasing und Kilometergeld)\r\nEKR 732-733 | 9170\r\n\r\nAusgaben Kfz-Kosten\r\nKeine AfA (9130), kein Leasing (9180) und kein Kilometergeld (9160)\r\n\r\nWenn nicht als Kilometergeld (Fahrtenbuch) geltend gemacht, die tatsächlichen Instandhaltungsaufwendungen betreffend  Kfz,  Betriebsstoffe,  Reparatur-  und  Servicekosten, Versicherungsprämien, Steuern\r\n\r\nhttps:\/\/www.wko.at\/steuern\/abschreibung-von-kfz-aufwand-faq#:~:text=Mit%201.1.2025%20wurde%20das,entstehen.",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68932bdc09f41",
+                "label": "Firmenveranstaltung",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "Firmenfeier-Werbeveranstaltung"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Firmenfeier ohne Mitarbeiter kann nur abgeschrieben werden insofern die Veranstaltung Werbezwecken dient. !! Werbeveranstaltung !!\r\n\r\nDokumentation mit details",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_68931cef3ecd7",
+                "label": "Anlagegüter",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "Anlagegueter"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "degressive-abschreibung"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Abschreibungen auf das Anlagevermögen (z.B. AfA, geringwertige Wirtschaftsgüter,\r\nEKR 700-708), soweit sie nicht in Kennzahl 9134 und\/oder 9135 zu erfassen sind. | 9130\r\n\r\n!!!WICHTIG IMMER VORHER ÜBERPRÜFEN!!\r\nhttps:\/\/www.ea-tabelle.at\/av\r\n\r\nAusgaben Abschreibungen und geringwertige Wirtschaftsgüter\r\n\r\nAbschreibungen auf das Anlagevermögen einschließlich vorzeitiger und beschleunigter Abschreibungen sowie sofort abgesetzte geringwertige Anlagegüter einzutragen.\r\n\r\nDas sind Dinge die dem Unternehmer mehr als 1 Jahr zur Ausführung seiner Tätigkeit dienen: Einrichtung, Computer, Drucker, Fahrzeuge, Maschine, Büroeinrichtung, usw.\r\n\r\nWirtschaftsgütern, deren Verwendung oder Nutzung durch den Steuerpflichtigen zur Erzielung von Einkünften sich erfahrungsgemäß auf einen Zeitraum von mehr als einem Jahr erstreckt …\r\nEStG 1988 § 7 Abs. 2\r\n\r\n„Anlagegüter“ (AG) sind Wirtschaftsgüter (oft Gegenstände) die mehr als 1 Jahr in Ihrem Betrieb dienen. \r\n\r\nEs gibt zwei Arten von Anlagegüter: abnutzere und nicht abnutzbare Anlagegüter.\r\n\r\nAbnutzbar\r\nBei abnutzbaren Wirtschaftsgütern wie Computern, Webseiten, Druckern oder Möbeln tritt dagegen im Laufe der Zeit ein Wertverlust ein. Dieser Wertverlust kann jährlich in Form der Absetzung für Abnutzung (AfA) als Betriebsausgabe geltend gemacht werden.\r\n\r\nNicht Abnutzbar\r\nBei nicht abnutzbaren Wirtschaftsgütern, wie Grundstücken, Domains, Kunstwerken oder Antiquitäten bleibt der Wert über die Zeit erhalten oder steigt sogar.\r\n\r\nGeringwertigen Wirtschaftsgütern (GWG) brauchen keine AfA\r\nDie Anschaffungs- oder Herstellungskosten von abnutzbaren Anlagegütern können als Betriebsausgaben abgesetzt werden, wenn diese Kosten für das einzelne Anlagegut 1000 Euro nicht übersteigen (geringwertige Wirtschaftsgüter) … Bei Gewinnermittlung gemäß § 4 Abs. 3 kann dieser Betrag im Jahr der Verausgabung voll abgesetzt werden …\r\nEStG 1988 § 13\r\n\r\nDas Verzeichnis hat unter (1) genauer Bezeichnung jedes einzelnen Anlagegutes zu enthalten:\r\n(2) Anschaffungstag\r\n(3) Anschaffungs- oder Herstellungskosten\r\n(4) Name und Anschrift des Lieferanten\r\n(5) voraussichtliche Nutzungsdauer\r\n(6) Betrag der jährlichen Absetzung für Abnutzung und\r\n(7) den noch absetzbaren Betrag (Restbuchwert).\r\nEStG 1988 § 7 Abs. 3\r\n\r\nBeispiel: Maschine mit 1000€ Anschaffungskosten und 10 Jahre Nutzungsdauer linear abschreiben:\r\n\r\nJahr: AfA-Betrag: 100€; Restbuchwert: 900€\r\nJahr: AfA-Betrag: 100€; Restbuchwert: 800€\r\nJahr: AfA-Betrag: 100€; Restbuchwert: 700€.\r\nusw. und nach 10 Jahren ist alles abgeschrieben.",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6893273f4ee13",
+                "label": "Anlagegüter Degressive Abschreibung",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "Anlagegueter"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "degressive-abschreibung"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Degressive Absetzung für Abnutzung (§ 7 Abs. 1a). | 9134\r\n\r\n!!!WICHTIG IMMER VORHER ÜBERPRÜFEN!!\r\nhttps:\/\/www.ea-tabelle.at\/av\r\n\r\nAusgaben Abschreibungen  von Anlagegütern über 1000€\r\n\r\nDas sind Dinge die dem Unternehmer mehr als 1 Jahr zur Ausführung seiner Tätigkeit dienen: Einrichtung, Computer, Drucker, Fahrzeuge, Maschine, Büroeinrichtung, usw.\r\n\r\nWirtschaftsgütern, deren Verwendung oder Nutzung durch den Steuerpflichtigen zur Erzielung von Einkünften sich erfahrungsgemäß auf einen Zeitraum von mehr als einem Jahr erstreckt …\r\nEStG 1988 § 7 Abs. 2\r\n\r\n„Anlagegüter“ (AG) sind Wirtschaftsgüter (oft Gegenstände) die mehr als 1 Jahr in Ihrem Betrieb dienen. \r\n\r\nEs gibt zwei Arten von Anlagegüter: abnutzere und nicht abnutzbare Anlagegüter.\r\n\r\nAbnutzbar\r\nBei abnutzbaren Wirtschaftsgütern wie Computern, Webseiten, Druckern oder Möbeln tritt dagegen im Laufe der Zeit ein Wertverlust ein. Dieser Wertverlust kann jährlich in Form der Absetzung für Abnutzung (AfA) als Betriebsausgabe geltend gemacht werden.\r\n\r\nNicht Abnutzbar\r\nBei nicht abnutzbaren Wirtschaftsgütern, wie Grundstücken, Domains, Kunstwerken oder Antiquitäten bleibt der Wert über die Zeit erhalten oder steigt sogar.\r\n\r\nDas Verzeichnis hat unter (1) genauer Bezeichnung jedes einzelnen Anlagegutes zu enthalten:\r\n(2) Anschaffungstag\r\n(3) Anschaffungs- oder Herstellungskosten\r\n(4) Name und Anschrift des Lieferanten\r\n(5) voraussichtliche Nutzungsdauer\r\n(6) Betrag der jährlichen Absetzung für Abnutzung und\r\n(7) den noch absetzbaren Betrag (Restbuchwert).\r\nEStG 1988 § 7 Abs. 3\r\n\r\nFür bestimmte nach dem 30. Juni 2020 angeschaffte oder hergestellte Wirtschaftsgüter besteht allerdings die Möglichkeit einer degressiven AfA\r\nEStR 2000 RZ 3109\r\n\r\nDie Absetzung für Abnutzung kann auch in fallenden Jahresbeträgen nach einem unveränderlichen Prozentsatz von höchstens 30% erfolgen (degressive Absetzung für Abnutzung). Dieser Prozentsatz ist auf den jeweiligen Buchwert (Restbuchwert) anzuwenden und ergibt den jeweiligen Jahresbetrag.\r\nEStG 1988 § 7 Abs. 1a\r\n\r\nBeispiel: Maschine mit 1000€ Anschaffungskosten und 10 Jahre Nutzungsdauer degressiv abschreiben:\r\nJahr: AfA-Betrag: 1000€ x 30 % = 300€; Restbuchwert: 700€\r\nJahr: AfA-Betrag: 700€ x 30 % = 210€; Restbuchwert: 490€\r\nJahr: AfA-Betrag: 490€ x 30 % = 147€; Restbuchwert: 343€\r\nJahr: AfA-Betrag: 343€ x 30 % = 102,90€; Restbuchwert: 240,10€\r\nJahr: AfA-Betrag: 240,10€ x 30 % = 72,03€; Restbuchwert: 168,07€\r\nJahr: AfA-Betrag: 168,07€ x 30 % = 50,42€; Restbuchwert: 117,65€\r\nJahr: AfA-Betrag: 117,65€ x 30 % = 35,30€; Restbuchwert: 82,35€ Umstieg auf lineare AfA, weil größere Abschreibung möglich: Restjahre: 3 Jahr, AfA-Betrag: 117,65 \/ 3 = 39, 21€;  Restbuchwert: 78,44€\r\nJahr: AfA-Betrag: 39, 21€; Restbuchwert: 39,23€\r\nJahr: AfA-Betrag: 39, 21€; Restbuchwert: 0,02€",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6893025ee9575",
+                "label": "Betriebsausgaben Infos",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "waren"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 --- Waren, Rohstoffe,Hilfsstoffe ---\r\nEKR 500-539, 580 - (Kennzahl 9100)\r\nzb DTF-Transferfolien, Lichter, Traversen\r\n\r\nAusgaben Material: Waren, Rohstoffe, Hilfsstoffe\r\n\r\nEinkauf von Waren\r\nRohstoffe\r\nFertig- und Einzelteile\r\nHilfsstoffe\r\nKeine Büromaterialien",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6893146a9c2b6",
+                "label": "Betriebsausgaben Infos sonstiges",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "betriebsausgaben"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "weiterbildung"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "In den obigen Kennzahlen nicht erfasste übrige Aufwendungen\/Betriebsausgaben (ohne pauschalierte Betriebsausgaben), Kapitalveränderungen - Saldo -\r\n(Kennzahl 9230)",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6892f3f79f934",
+                "label": "Diäten Verpflegungsgeld Infos",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "reisepauschale"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "(Reisekosten fallen unter Werbekosten)\r\nHier die Zeit ausrechnen:\r\nhttps:\/\/www.rechner.club\/datum-uhrzeit\/zeitdauer-berechnen\r\n\r\ngegebenenfalls bei übernächtigung + 15€ - 2024 \/ 17€ - 2025\r\n\r\nbis 3\t0\r\n3 bis 4\t8,80\r\n4 bis 5\t11\r\n5 bis 6\t13,20\r\n6 bis 7\t15,40\r\n7 bis 8\t17,60\r\n8 bis 9\t19,80\r\n9 bis 10\t22\r\n10 bis 11\t24,20\r\n(11 bis 24      26,40 bis 2024)\r\n11 bis 12\t   26,20\r\n12 bis 13\t   28,40\r\n13 bis 24\t   30\r\n\r\nPro Mahlzeit werden 13,20 abgezogen.\r\nErst ab 26km Entfernung hat man Anspruch auf Diäten\r\nMuss in der Beschreibung extra angegeben werden:\r\nDatum der Reise  - Zeitpunkt der Abfahrt und Rückkehr - Reiseziel und Reiseort - Zweck der Reise",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_689329e8fd3f5",
+                "label": "Kilometergeld",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "reisepauschale"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Muss in der Beschreibung extra angegeben werden:\r\nDatum der Reise  - Zeitpunkt der Abfahrt und Rückkehr - Reiseziel und Reiseort - Zweck der Reise\r\n\r\nhttps:\/\/www.wko.at\/steuern\/abschreibung-von-kfz-aufwand-faq#:~:text=Mit%201.1.2025%20wurde%20das,entstehen\r\n\r\nWie hoch ist das amtliche Kilometergeld?\r\n\r\nMit 1.1.2025 wurde das Kilometergeld angehoben. Das amtliche Kilometergeld für PKW und Kombi sowie Motorräder und Fahrten mit dem Fahrrad beträgt nunmehr 0,50 EUR pro Kilometer. Mit diesem Pauschalbetrag sind sämtliche Kosten abgegolten, die durch die Anschaffung und den laufenden Betrieb des Kfz, etc. entstehen.\r\n\r\nFür die betrieblich bedingte Mitbeförderung kann pro Person und Kilometer ein Zuschlag von 0,15 EUR verrechnet werden. Für Fußwege über einen Kilometer beträgt es 0,38 EUR. Für andere Fahrzeuge wie LKW oder Busse gibt es kein amtliches Kilometergeld. \r\n\r\n\r\nKann das Kilometergeld in unbeschränkter Höhe verrechnet werden?\r\n\r\nDas amtliche Kilometergeld kann für höchstens 30.000 km in Anspruch genommen werden. Werden betriebliche Fahrten von mehr als 30.000 km (welche aber weniger als 50 % der Jahreskilometerleistung ausmachen) zurückgelegt, können entweder die Kilometergelder für 30.000 km oder die tatsächlichen Kosten im Ausmaß der betrieblichen Nutzung angesetzt werden. \r\n\r\nBei Fahrten mit dem Fahrrad kann das amtliche Kilometergeld für höchstens 3.000 km pro Wirtschaftsjahr in Anspruch genommen werden.",
+                "new_lines": "br",
+                "esc_html": 0
+            },
+            {
+                "key": "field_689834cd9acb5",
+                "label": "Diätengeld Berechnung",
+                "name": "documents_diaetengeld_berechnung",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "reisepauschale"
+                        },
+                        {
+                            "field": "field_689833bf9acb4",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 1,
+                "placeholder": "auto fill",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6898391c9acc3",
+                "label": "KIlometergeld Berechnung",
+                "name": "documents_kilometergeld_berechnung",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "reisepauschale"
+                        },
+                        {
+                            "field": "field_689835419acbd",
+                            "operator": "!=empty"
+                        },
+                        {
+                            "field": "field_689835589acbe",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 1,
+                "placeholder": "auto fill",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_689831d89acae",
+                "label": "Kilometergeld\/Diätengeld Nachweis",
+                "name": "documents_kilometergeld_diaetengeld_nachweis",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "reisepauschale"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 1,
+                "max": 0,
+                "collapsed": "",
+                "button_label": "Add Row",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_689832369acaf",
+                        "label": "Startzeitpunkt (Losfahrt)",
+                        "name": "documents_nachweis_startzeitpunkt",
+                        "aria-label": "",
+                        "type": "date_time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d.m.Y g:i a",
+                        "return_format": "d.m.Y g:i a",
+                        "first_day": 1,
+                        "allow_in_bindings": 1,
+                        "default_to_current_date": 0,
+                        "parent_repeater": "field_689831d89acae"
+                    },
+                    {
+                        "key": "field_689835419acbd",
+                        "label": "Kilometer_hinfahrt",
+                        "name": "documents_kilometer_nachweis_hinfahrt",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_689831d89acae"
+                    },
+                    {
+                        "key": "field_6898325c9acb0",
+                        "label": "Rückfahrt (Ankunft)",
+                        "name": "documents_nachweis_ankunft",
+                        "aria-label": "",
+                        "type": "date_time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d.m.Y g:i a",
+                        "return_format": "d.m.Y g:i a",
+                        "first_day": 1,
+                        "allow_in_bindings": 1,
+                        "default_to_current_date": 0,
+                        "parent_repeater": "field_689831d89acae"
+                    },
+                    {
+                        "key": "field_689835589acbe",
+                        "label": "Kilometer Rückfahrt",
+                        "name": "documents_kilometer_nachweis_Rueckfahrt_",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_689831d89acae"
+                    },
+                    {
+                        "key": "field_689833899acb3",
+                        "label": "Fahrtstunden",
+                        "name": "documents_nachweis_fahrtstunden",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "21",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_689831d89acae"
+                    },
+                    {
+                        "key": "field_689833bf9acb4",
+                        "label": "Reisedauer_gesamt",
+                        "name": "documents_reisedauer_nachweis_gesamt",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_689831d89acae"
+                    },
+                    {
+                        "key": "field_689832979acb1",
+                        "label": "Ortschaft",
+                        "name": "documents_nachweis_ortschaft",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "allow_in_bindings": 0,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_689831d89acae"
+                    },
+                    {
+                        "key": "field_689832f59acb2",
+                        "label": "Grund der Fahrt (Tätigkeit)",
+                        "name": "documents_nachweis_reason_for",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "allow_in_bindings": 0,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_689831d89acae"
+                    },
+                    {
+                        "key": "field_689837b09acc0",
+                        "label": "Übernachtung",
+                        "name": "documents_nachweis_ubernachtung",
+                        "aria-label": "",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "Wurde Übernachtet?",
+                        "default_value": 0,
+                        "allow_in_bindings": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": "",
+                        "parent_repeater": "field_689831d89acae"
+                    },
+                    {
+                        "key": "field_689838299acc2",
+                        "label": "Zusätzliche Infos",
+                        "name": "documents_nachweis_additional_informations_",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "allow_in_bindings": 0,
+                        "rows": "",
+                        "placeholder": "",
+                        "new_lines": "",
+                        "parent_repeater": "field_689831d89acae"
+                    }
+                ]
+            },
+            {
+                "key": "field_643ff85d9fa4e",
+                "label": "Document Data",
+                "name": "documents_document_data",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "107",
+                        "label": "Document Number",
+                        "name": "documents_document_data_document_number",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_643ff9979fa51",
+                        "label": "Document Date",
+                        "name": "documents_document_data_document_date",
+                        "aria-label": "",
+                        "type": "date_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d.m.Y",
+                        "return_format": "d.m.Y",
+                        "first_day": 1,
+                        "default_to_current_date": 0
+                    },
+                    {
+                        "key": "field_643ffa299fa52",
+                        "label": "Term of Payment",
+                        "name": "documents_document_data_term_of_payment",
+                        "aria-label": "",
+                        "type": "date_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d.m.Y",
+                        "return_format": "d.m.Y",
+                        "first_day": 1,
+                        "default_to_current_date": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_644006ce339df",
+                "label": "Client Relationship",
+                "name": "documents_client_relationship",
+                "aria-label": "",
+                "type": "bidirectional",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "keine-ausgabe"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "reisepauschale"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "relation_field_name": "clients_documents_relationship",
+                "post_type": [
+                    "clients"
+                ],
+                "post_status": "",
+                "taxonomy": "",
+                "filters": [
+                    "search"
+                ],
+                "return_format": "id",
+                "min": "",
+                "max": 1,
+                "allow_in_bindings": 1,
+                "elements": "",
+                "bidirectional": 0
+            },
+            {
+                "key": "field_6442593a41953",
+                "label": "Document Path",
+                "name": "documents_path",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_643dc1bb5df99",
+                            "operator": "==empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_644b80da63556",
+                "label": "Json File Name",
+                "name": "documents_json_path",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_643dc1bb5df99",
+                            "operator": "==empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_66dd65c701bd0",
+                "label": "Invoice\/Einnahmen Zusatz",
+                "name": "invoice-einnahmen-zusatz",
+                "aria-label": "",
+                "type": "bidirectional",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "relation_field_name": "",
+                "post_type": [
+                    "documents"
+                ],
+                "post_status": "",
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "return_format": "object",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "elements": "",
+                "bidirectional": 0
+            },
+            {
+                "key": "field_68930d95970d9",
+                "label": "Diaten und Kilometergeld Infos Abschreibung",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "reisepauschale"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_66d6f443c2194",
+                            "operator": "==",
+                            "value": "kilometergeld"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "E1 - Aufwendungen\/Betriebsausgaben\r\n\r\nReise- und Fahrtspesen inkl. Kilometergeld und Diäten (ohne tatsächliche Kfz-Kosten)\r\nEKR 734-737 - (Kennzahl 9160)",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "documents"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_64401cec7ea06",
+        "title": "Documents List View Settings",
+        "fields": [
+            {
+                "key": "field_64401cf34d32e",
+                "label": "Amount per Page",
+                "name": "dlvs_amount_per_page",
+                "aria-label": "",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "40",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "min": 1,
+                "max": 100,
+                "step": "",
+                "prepend": "Display",
+                "append": "Documents per Page"
+            },
+            {
+                "key": "field_64401d824d32f",
+                "label": "Document Display View",
+                "name": "dlvs_document_display_view",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "grid_view": "Grid View",
+                    "table_view": "Table View"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "vertical",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_64401f2e2571e",
+                "label": "Documents Limiter",
+                "name": "dlvs_documents_limiter",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "pagination": "Pagination",
+                    "load_more": "Load More Button",
+                    "infinite_loading": "Infinite Loading"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "vertical",
+                "return_format": "value",
+                "save_other_choice": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-documents-list-view"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_64478a8d851a7",
+        "title": "Frontend Form Descriptions",
+        "fields": [
+            {
+                "key": "field_64478aa581d38",
+                "label": "Bank Details",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Bank Details",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_64478b6d00330",
+                "label": "Shipping Adress (Client)",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Shipping Adress",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_64478b7e00331",
+                "label": "Company Adress (Client)",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Company Adress",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_64478c2a00332",
+                "label": "Shipping Adress (Recipient)",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Shipping Adress",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_64478c4200333",
+                "label": "Company Adress (Recipient)",
+                "name": "",
+                "aria-label": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Company Adress",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_643dbbaaadee6",
+        "title": "Product - Website Settings",
+        "fields": [
+            {
+                "key": "field_643dbbd025921",
+                "label": "Standard Settings",
+                "name": "pws_default_settings",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": []
+            },
+            {
+                "key": "field_643dbc7b25922",
+                "label": "Ki Settings",
+                "name": "pws_settings",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": []
+            },
+            {
+                "key": "field_643dbce825923",
+                "label": "Export Settings",
+                "name": "pws_settings",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": []
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_partycrowd_invoice_settings",
+        "title": "Rechnungs-Einstellungen",
+        "fields": [
+            {
+                "key": "field_invoice_sender_profile",
+                "label": "Absender wählen",
+                "name": "invoice_sender_profile",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "Wähle aus, in welchem Namen diese Rechnung gestellt wird.",
+                "required": 1,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Party Crowd": "Party Crowd",
+                    "Buehnenbau.at": "Buehnenbau.at",
+                    "Upcoming Art": "Upcoming Art",
+                    "Ballcatering.at": "Ballcatering.at"
+                },
+                "default_value": "Party Crowd",
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 1,
+                "ajax": 0,
+                "placeholder": "",
+                "create_options": 0,
+                "save_options": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "sliced_invoice"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": false,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    }
+]

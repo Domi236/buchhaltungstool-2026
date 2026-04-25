@@ -1,0 +1,58 @@
+# IDE & System
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+
+# WordPress Core (Sollte nicht in Git, da über Updates verwaltet)
+wp-admin/
+wp-includes/
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# Ignoriere ALLE Themes im Themes-Ordner
+wp-content/themes/*
+
+# Erlaube NUR das Enfold-Child Theme (WICHTIG: Das "!" hebt das Verbot auf)
+!wp-content/themes/enfold-child/
+
+# Sicherheit
+wp-config.php
+
+# Content & Medien
+
+wp-content/uploads/*
+!wp-content/uploads/document-uploader
+!wp-content/uploads/response-uploader
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+
+# Plugins (Normalerweise alle ignorieren)
+wp-content/plugins/*
+!wp-content/plugins/netzwerk-services
+# Falls du bestimmte Plugins DOCH tracken willst, nutze: !wp-content/plugins/mein-plugin/
+
+# Theme-spezifische Entwicklung (Enfold-Child)
+wp-content/themes/enfold-child/node_modules/
+wp-content/themes/enfold-child/vendor/
+wp-content/themes/enfold-child/build/
+wp-content/themes/enfold-child/.idea/
+
+# Root-level Node Modules
+node_modules/

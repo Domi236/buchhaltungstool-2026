@@ -1,0 +1,14 @@
+// Assets
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "base/variables";
+// Utilities
+@import 'utilities/mixins',
+'utilities/helpers';
+// Base Styles
+@import 'base/grid';
+@import 'base/enfold-reset';
+@import 'base/base';
+// Layout Styles
+@import 'layout/header',
+'layout/components',
+'layout/footer';
