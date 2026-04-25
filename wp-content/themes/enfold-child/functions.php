@@ -3,15 +3,6 @@
  * ACF Data Viewer
  */
 require_once get_stylesheet_directory() . '/inc/classes/class_data_viewer.php';
-/**
- * AI Logger
- */
-//require_once get_stylesheet_directory() . '/inc/classes/class-ai-logger.php';
-
-/**
- * Document Uploader
- */
-//require_once get_stylesheet_directory() . '/inc/classes/class_document_uploader.php';
 
 /**
  * ResDebug functions
@@ -57,36 +48,6 @@ require_once get_stylesheet_directory() . '/inc/shortcodes.php';
  * Widgets
  */
 require_once get_stylesheet_directory() . '/inc/widgets.php';
-
-/**
- * ACF Post Updater
- */
-//require_once get_stylesheet_directory() . '/inc/classes/class-acf-post-updater.php';
-
-/**
- * ACF Post Creator
- */
-// get_stylesheet_directory() . '/inc/classes/class-acf-post-creator.php';
-
-/**
- * GravityForm Change List item to Number Rows
- */
-//require_once get_stylesheet_directory() . '/inc/classes/class-change-list-item-number-rows-gravity.php';
-
-/**
- * GravityForm Set all List Items Required
- */
-//require_once get_stylesheet_directory() . '/inc/classes/class-gravity-list-items-required.php';
-
-/**
- * Gravity Json Loader
- */
-//require_once get_stylesheet_directory() . '/inc/classes/class-gravity-json-loader.php';
-
-/**
- * GravityForm json Label functions
- */
-//require_once get_stylesheet_directory() . '/inc/gravity-json-label-functions.php';
 /**
  * GravityForm functions
  */
@@ -108,19 +69,14 @@ require_once get_stylesheet_directory() . '/inc/footer.php';
 require_once get_stylesheet_directory() . '/inc/enfold-element-output-functions.php';
 
 /**
- * Translations
- */
-//require_once get_stylesheet_directory() . '/inc/translations.php';
-
-/**
- * Document AI Connector
- */
-//require_once get_stylesheet_directory() . '/inc/classes/class-document-ai-connector.php';
-
-/**
  * Steuerausgleich caluclator
  */
 require_once get_stylesheet_directory() . '/inc/classes/steuerausgleich/class-calucalation.php';
+
+/**
+ * Tax Snapshot Engine
+ */
+require_once get_stylesheet_directory() . '/inc/classes/steuerausgleich/class-tax-snapshot.php';
 
 /**
  * Sliced Invoices Helper
@@ -137,4 +93,30 @@ require_once get_stylesheet_directory() . '/sliced/template-tags/sliced-tags-dis
  */
 require_once get_stylesheet_directory() . '/inc/api-endpoints-remote.php';
 
+
+// --- START: EINZIGER TEST TRIGGER ---
+add_action( 'wp_loaded', function() {
+    if ( isset( $_GET['run_tax_test'] ) && $_GET['run_tax_test'] === '1' ) {
+        $file = get_stylesheet_directory() . '/inc/classes/steuerausgleich/class-tax-snapshot.php';
+
+        if ( ! file_exists( $file ) ) {
+            wp_die( "<h1>Fehler 1</h1><p>Datei fehlt: {$file}</p>" );
+        }
+
+        require_once $file;
+
+        if ( ! class_exists( 'Class_Tax_Snapshot' ) ) {
+            wp_die( "<h1>Fehler 2</h1><p>Datei wurde geladen, aber die Klasse existiert nicht. Hast du 'class-tax-snapshot.php' wirklich abgespeichert?</p>" );
+        }
+
+        try {
+            Class_Tax_Snapshot::init_storage();
+            Class_Tax_Snapshot::run_historical_tests();
+            wp_die( "<h1>TEST ERFOLGREICH GESTARTET!</h1><p>Bitte prüfe jetzt deine Log-Datei im /logs/ Ordner.</p>" );
+        } catch( Throwable $e ) {
+            wp_die( "<h1>Laufzeit-Fehler</h1><p>" . $e->getMessage() . "</p>" );
+        }
+    }
+});
+// --- ENDE: EINZIGER TEST TRIGGER ---
 

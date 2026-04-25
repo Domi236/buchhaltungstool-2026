@@ -1,0 +1,28 @@
+# ============================================================================
+# ⚠️ CORE RULES: BUCHHALTUNG, STEUERN (AT) & ERP-ARCHITEKTUR
+# ============================================================================
+
+1. GELD-MATHEMATIK & PRÄZISION (CENT-BASIS):
+- Nutze NIEMALS Fließkommazahlen (`float`) für Berechnungen oder Summationen!
+- Alle internen Berechnungen für Geldbeträge MÜSSEN in Cent (Integer) durchgeführt werden (z. B. `10.50 €` wird intern zu `1050`).
+- Rundungsfehler sind inakzeptabel. Die Umwandlung in Euro (`/ 100`) und die Formatierung (`number_format`) findet AUSSCHLIESSLICH beim finalen Rendern für das Frontend oder PDF statt.
+
+2. FINANZONLINE KONFORMITÄT (UVA & E1):
+- Variablen und Array-Keys für Steuern MÜSSEN die offiziellen Kennzahlen von FinanzOnline enthalten.
+- Beispiele UVA: `kennzahl_000` (Lieferungen/Leistungen), `kennzahl_022` (Einfuhr), `kennzahl_060` (Vorsteuer).
+- Berechnungen für Quartale oder Jahresabschlüsse (z.B. Einkommenssteuerausgleich) müssen exakt auf diesen Kennzahlen basieren.
+
+3. SNAPSHOT-INTEGRITÄT (IMMUTABILITY & LOGGING):
+- Die Snapshot-Dateien (JSON) im `/pc-tax-snapshots/` Ordner sind HEILIG.
+- Code-Änderungen an der Steuerlogik dürfen *niemals* bestehende Snapshots historischer Monate überschreiben, außer es wird explizit ein `$force_overwrite` Flag vom Admin gesetzt.
+- Nutze für das Logging ausschließlich die etablierte `AI_Logger::debug()` Methode (z.B. mit Parameter 'bug' oder 'test').
+
+4. SLICED INVOICES & DIE MITARBEITER-TOOL-BRÜCKE:
+- Die Rechnungs-Erstellung über das Mitarbeiter-Tool (REST-API) muss über die bestehenden Hooks laufen.
+- Bei der Anlage von "Sliced Invoices" als Draft (Entwurf) MÜSSEN die korrekten ACF-Absender-Profile (z.B. "Party Crowd") geladen werden.
+- Nutze für die Rechnungsnummern zwingend die Mechanik aus `partycrowd_generate_global_invoice_number` und den Metakey `_global_invoice_number`. Überschreibe niemals manuell HTML5-Validierungen, sondern belasse die Fixes im JS (`#_sliced_client` required remove).
+
+5. WORDPRESS & ACF STANDARDS:
+- Verändere keine bestehenden Custom Post Types (`documents`, `sliced_invoice`, `clients`).
+- Nutze ACF-Funktionen (`get_field`, `update_field`) korrekt und beachte, ob Felder von einer Options-Seite (`'option'`) geladen werden müssen.
+- Wenn UI-Anpassungen (CSS/JS) nötig sind, beachte, dass das System Webpack Encore nutzt. Frontend-JS gehört in die `main.js`, nicht als Inline-Script in PHP-Dateien (Ausnahme: strikte Backend-Admin-Fixes).
