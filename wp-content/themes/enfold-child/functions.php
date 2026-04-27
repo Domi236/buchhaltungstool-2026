@@ -79,6 +79,11 @@ require_once get_stylesheet_directory() . '/inc/classes/steuerausgleich/class-ca
 require_once get_stylesheet_directory() . '/inc/classes/steuerausgleich/class-tax-snapshot.php';
 
 /**
+ * Tax Engine (Kennzahlen-Berechnung)
+ */
+require_once get_stylesheet_directory() . '/inc/classes/steuerausgleich/class-tax-engine.php';
+
+/**
  * Sliced Invoices Helper
  */
 require_once get_stylesheet_directory() . '/inc/sliced-invoices-helper.php';

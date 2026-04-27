@@ -1,0 +1,223 @@
+{
+  "blank_year": {
+    "e1": {
+      "Catering": { "9040": 0, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 0 },
+      "Event Management": { "9040": 0, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 0 },
+      "Veranstaltungstechnik": { "9040": 0, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 0 },
+      "Werbeagentur": { "9040": 0, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 0 },
+      "Ausserbetrieblich": { "725": 0, "718": 0, "916": 0, "169": 0, "719": 0, "720": 0, "721": 0, "722": 0, "724": 0, "159": 0, "460": 0, "730": 0, "731": 0, "734": 0, "735": 0, "475": 0 }
+    },
+    "u1": {
+      "kennzahl_000": 0, "kennzahl_020": 0, "kennzahl_022": 0, "kennzahl_029": 0,
+      "kennzahl_006": 0, "kennzahl_037": 0, "kennzahl_052": 0, "kennzahl_007": 0,
+      "kennzahl_070": 0, "kennzahl_071": 0, "kennzahl_072": 0, "kennzahl_073": 0,
+      "kennzahl_008": 0, "kennzahl_088": 0, "kennzahl_060": 0, "kennzahl_061": 0,
+      "kennzahl_062": 0, "kammerumlage": 0
+    }
+  },
+  "ground_truth": {
+    "2021": {
+      "e1": {
+        "Event Management": { "9040": 290000, "9050": 0, "9100": 109105, "9110": 147165, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 180600, "9190": 131172, "9200": 13877, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 7261, "9230": 59317, "320": -358497 },
+        "Veranstaltungstechnik": { "9040": 10700, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 10700 },
+        "Werbeagentur": { "9040": 68199, "9050": 0, "9100": 313618, "9110": 661, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 25800, "9190": 24294, "9200": 1202, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 6252, "9230": 414158, "320": -717786 },
+        "Catering": { "9040": 0, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 0 },
+        "Ausserbetrieblich": { "725": 0, "718": 0, "916": 0, "169": 0, "719": 17600, "720": 5000, "721": 0, "722": 1300, "724": 11154, "159": 0, "460": 0, "730": 32510, "731": 0, "734": 0, "735": 0, "475": 0 }
+      },
+      "u1": {
+        "kennzahl_000": 297419, "kennzahl_020": 10700, "kennzahl_022": 286719, "kennzahl_029": 0,
+        "kennzahl_006": 0, "kennzahl_037": 0, "kennzahl_052": 0, "kennzahl_007": 0,
+        "kennzahl_070": 0, "kennzahl_071": 0, "kennzahl_072": 0, "kennzahl_073": 0,
+        "kennzahl_008": 0, "kennzahl_088": 0, "kennzahl_060": 209524, "kennzahl_061": 0,
+        "kennzahl_062": 0, "kammerumlage": 34120
+      }
+    },
+    "2022": {
+      "e1": {
+        "Event Management": { "9040": 111925, "9050": 0, "9100": 595474, "9110": 12642, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 24958, "9180": 68500, "9190": 0, "9200": 1490, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 52420, "320": -643559 },
+        "Veranstaltungstechnik": { "9040": 75984, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 75984 },
+        "Werbeagentur": { "9040": 211431, "9050": 0, "9100": 112713, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 104011, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 94200, "9230": 306366, "320": -405859 },
+        "Catering": { "9040": 0, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 0 },
+        "Ausserbetrieblich": { "725": 0, "718": 0, "916": 0, "169": 46667, "719": 0, "720": 0, "721": 0, "722": 21284, "724": 10098, "159": 30000, "460": 10680, "730": 14242, "731": 0, "734": 0, "735": 0, "475": 0 }
+      },
+      "u1": {
+        "kennzahl_000": 332783, "kennzahl_020": 0, "kennzahl_022": 332783, "kennzahl_029": 0,
+        "kennzahl_006": 0, "kennzahl_037": 0, "kennzahl_052": 0, "kennzahl_007": 0,
+        "kennzahl_070": 0, "kennzahl_071": 0, "kennzahl_072": 0, "kennzahl_073": 0,
+        "kennzahl_008": 0, "kennzahl_088": 0, "kennzahl_060": 223692, "kennzahl_061": 0,
+        "kennzahl_062": 0, "kammerumlage": 34620
+      }
+    },
+    "2023": {
+      "e1": {
+        "Catering": { "9040": 949131, "9050": 0, "9100": 81627, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 85219, "9165": 4016, "9180": 244671, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 120000, "9225": 107238, "9230": 178437, "320": 127923 },
+        "Event Management": { "9040": 384856, "9050": 0, "9100": 4982, "9110": 18998, "9120": 0, "9130": 0, "9134": 0, "9160": 42700, "9165": 35363, "9180": 0, "9190": 38349, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 18998, "9230": 485416, "320": -259950 },
+        "Veranstaltungstechnik": { "9040": 0, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 0 },
+        "Werbeagentur": { "9040": 337111, "9050": 0, "9100": 20514, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 172112, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 86440, "320": 58045 },
+        "Ausserbetrieblich": { "725": 876273, "718": 46400, "916": 4800, "169": 47435, "719": 35624, "720": 4999, "721": 0, "722": 6999, "724": 0, "159": 30000, "460": 14952, "730": 45170, "731": 0, "734": 0, "735": 0, "475": 0 }
+      },
+      "u1": {
+        "kennzahl_000": 1671098, "kennzahl_020": 119303, "kennzahl_022": 1551795, "kennzahl_029": 0,
+        "kennzahl_006": 0, "kennzahl_037": 0, "kennzahl_052": 0, "kennzahl_007": 0,
+        "kennzahl_070": 0, "kennzahl_071": 0, "kennzahl_072": 0, "kennzahl_073": 0,
+        "kennzahl_008": 0, "kennzahl_088": 0, "kennzahl_060": 190420, "kennzahl_061": 0,
+        "kennzahl_062": 0, "kammerumlage": 45170
+      }
+    },
+    "2024": {
+      "e1": {
+        "Catering": { "9040": 515856, "9050": 0, "9100": 0, "9110": 15750, "9120": 0, "9130": 0, "9134": 0, "9160": 33160, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 6717, "320": 459229 },
+        "Event Management": { "9040": 2244488, "9050": 0, "9100": 0, "9110": 269769, "9120": 0, "9130": 21242, "9134": 0, "9160": 197717, "9165": 40549, "9180": 370984, "9190": 100986, "9200": 43179, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 177354, "9230": 529706, "320": 492002 },
+        "Veranstaltungstechnik": { "9040": 0, "9050": 0, "9100": 0, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 0, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 0, "9225": 0, "9230": 0, "320": 0 },
+        "Werbeagentur": { "9040": 588042, "9050": 0, "9100": 92391, "9110": 0, "9120": 0, "9130": 0, "9134": 0, "9160": 0, "9165": 0, "9180": 0, "9190": 77333, "9200": 0, "9275": 0, "9215": 0, "9216": 0, "9217": 120000, "9225": 0, "9230": 116352, "320": 181966 },
+        "Ausserbetrieblich": { "725": 0, "718": 23200, "916": 1533, "169": 9768, "719": 0, "720": 1999, "721": 0, "722": 16731, "724": 23110, "159": 0, "460": 0, "730": 4961, "731": 0, "734": 0, "735": 0, "475": 0 }
+      },
+      "u1": {
+        "kennzahl_000": 1151789, "kennzahl_020": 0, "kennzahl_022": 1151789, "kennzahl_029": 0,
+        "kennzahl_006": 0, "kennzahl_037": 0, "kennzahl_052": 0, "kennzahl_007": 0,
+        "kennzahl_070": 0, "kennzahl_071": 0, "kennzahl_072": 0, "kennzahl_073": 0,
+        "kennzahl_008": 0, "kennzahl_088": 0, "kennzahl_060": 113939, "kennzahl_061": 0,
+        "kennzahl_062": 0, "kammerumlage": 0
+      }
+    }
+  },
+  "e1_struktur": {
+    "Catering": {
+      "title": "CATERING - 56.2 Caterer und Erbringung sonstiger Verpflegungsdienstleistungen",
+      "einnahmen": {
+        "9040": "Erträge/Betriebseinnahmen (Waren-/Leistungserlöse) ohne solche, die in einer Mitteilung gemäß § 109a erfasst sind - EKR 40-44 - einschließlich Eigenverbrauch (Entnahmewerte von Umlaufvermögen) - (Kennzahl 9040)",
+        "9050": "Erträge/Betriebseinnahmen, die in einer Mitteilung gemäß § 109a erfasst sind - EKR 40-44 - (Kennzahl 9050)"
+      },
+      "ausgaben": {
+        "9100": "Waren, Rohstoffe, Hilfsstoffe\nEKR 500-539, 580 - (Kennzahl 9100)",
+        "9110": "Beigestelltes Personal (Fremdpersonal) und Fremdleistungen\nEKR 570-579, 581, 750-753 - (Kennzahl 9110)",
+        "9120": "Personalaufwand (\"eigenes Personal\")\nEKR 60-68 - (Kennzahl 9120)",
+        "9130": "Abschreibungen auf das Anlagevermögen (z.B. AfA, geringwertige Wirtschaftsgüter,\nEKR 700-708), soweit sie nicht in Kennzahl 9134 und/oder 9135 zu erfassen sind.\n - (Kennzahl 9130)",
+        "9134": "Degressive Absetzung für Abnutzung (§ 7 Abs. 1a) - (Kennzahl 9134)",
+        "9160": "Reise- und Fahrtspesen inkl. Kilometergeld und Diäten (ohne tatsächliche Kfz-Kosten)\nEKR 734-737 - (Kennzahl 9160)",
+        "9165": "Pauschale von 50% der Kosten einer Wochen-, Monats- oder Jahreskarte für Massenbeförderungsmittel - (Kennzahl 9165)",
+        "9180": "Miet- und Pachtaufwand, Leasing\nEKR 740-743, 744-747 - (Kennzahl 9180)",
+        "9190": "Provisionen an Dritte, Lizenzgebühren\nEKR 754-757, 748-749\n - (Kennzahl 9190)",
+        "9200": "Werbe- und Repräsentationsaufwendungen, nicht in den Kennzahlen 9243 bis 9209 zu erfassenden Spenden, Trinkgelder\nEKR 765-769 - (Kennzahl 9200)",
+        "9275": "Arbeitszimmer\nEs darf keine Eintragung in Kennzahl 9215, 9216 oder 9217 erfolgen. Nur abzugsfähig, wenn das Arbeitszimmer Mittelpunkt der gesamten betrieblichen Tätigkeit ist.\n - (Kennzahl 9275)",
+        "9215": "Kleines Arbeitsplatzpauschale (300 Euro für ein volles Wirtschaftsjahr)\nEs darf keine Eintragung in Kennzahl 9275 oder Kennzahl 9217 erfolgen.\n - (Kennzahl 9215)",
+        "9216": "Ausgaben/Aufwendungen für ergonomisch geeignetes Mobiliar (z.B. Schreibtisch, Drehstuhl, Schreibtischlampe) bis höchstens 300 Euro.\nEs darf keine Eintragung in Kennzahl 9275, 9217 oder 159 (Formular E 1) erfolgen. Hier sind nur Ausgaben/Aufwendungen des Veranlagungsjahres und ein allfälliger Überhang aus einem Vorjahr anzugeben. - (Kennzahl 9216)",
+        "9217": "Großes Arbeitsplatzpauschale (1.200 Euro für ein volles Wirtschaftsjahr) - (Kennzahl 9217)",
+        "9225": "Eigene Pflichtversicherungsbeiträge, Beiträge zu Versorgungs- und Unterstützungseinrichtungen und Beiträge zur Selbständigenvorsorge - (Kennzahl 9225)",
+        "9230": "In den obigen Kennzahlen nicht erfasste übrige Aufwendungen/Betriebsausgaben (ohne pauschalierte Betriebsausgaben), Kapitalveränderungen - Saldo - (Kennzahl 9230)",
+        "320": "Gewinn / Verlust (Saldo der Betriebseinnahmen und Betriebsausgaben) - (Kennzahl 320)"
+      }
+    },
+    "Event Management": {
+      "title": "EVENT MANAGEMENT - 82.3 Messe-, Ausstellungs- und Kongressveranstalter",
+      "einnahmen": {
+        "9040": "Erträge/Betriebseinnahmen (Waren-/Leistungserlöse) ohne solche, die in einer Mitteilung gemäß § 109a erfasst sind - EKR 40-44 - einschließlich Eigenverbrauch (Entnahmewerte von Umlaufvermögen) - (Kennzahl 9040)",
+        "9050": "Erträge/Betriebseinnahmen, die in einer Mitteilung gemäß § 109a erfasst sind - EKR 40-44 - (Kennzahl 9050)"
+      },
+      "ausgaben": {
+        "9100": "Waren, Rohstoffe, Hilfsstoffe\nEKR 500-539, 580 - (Kennzahl 9100)",
+        "9110": "Beigestelltes Personal (Fremdpersonal) und Fremdleistungen\nEKR 570-579, 581, 750-753 - (Kennzahl 9110)",
+        "9120": "Personalaufwand (\"eigenes Personal\")\nEKR 60-68 - (Kennzahl 9120)",
+        "9130": "Abschreibungen auf das Anlagevermögen (z.B. AfA, geringwertige Wirtschaftsgüter,\nEKR 700-708), soweit sie nicht in Kennzahl 9134 und/oder 9135 zu erfassen sind. - (Kennzahl 9130)",
+        "9134": "Degressive Absetzung für Abnutzung (§ 7 Abs. 1a) - (Kennzahl 9134)",
+        "9160": "Reise- und Fahrtspesen inkl. Kilometergeld und Diäten (ohne tatsächliche Kfz-Kosten)\nEKR 734-737 - (Kennzahl 9160)",
+        "9165": "Pauschale von 50% der Kosten einer Wochen-, Monats- oder Jahreskarte für Massenbeförderungsmittel - (Kennzahl 9165)",
+        "9180": "Miet- und Pachtaufwand, Leasing\nEKR 740-743, 744-747 - (Kennzahl 9180)",
+        "9190": "Provisionen an Dritte, Lizenzgebühren\nEKR 754-757, 748-749 - (Kennzahl 9190)",
+        "9200": "Werbe- und Repräsentationsaufwendungen, nicht in den Kennzahlen 9243 bis 9209 zu erfassenden Spenden, Trinkgelder\nEKR 765-769 - (Kennzahl 9200)",
+        "9275": "Arbeitszimmer\nEs darf keine Eintragung in Kennzahl 9215, 9216 oder 9217 erfolgen. Nur abzugsfähig, wenn das Arbeitszimmer Mittelpunkt der gesamten betrieblichen Tätigkeit ist.\n - (Kennzahl 9275)",
+        "9215": "Kleines Arbeitsplatzpauschale (300 Euro für ein volles Wirtschaftsjahr)\nEs darf keine Eintragung in Kennzahl 9275 oder Kennzahl 9217 erfolgen.\n - (Kennzahl 9215)",
+        "9216": "Ausgaben/Aufwendungen für ergonomisch geeignetes Mobiliar (z.B. Schreibtisch, Drehstuhl, Schreibtischlampe) bis höchstens 300 Euro.\nEs darf keine Eintragung in Kennzahl 9275, 9217 oder 159 (Formular E 1) erfolgen. Hier sind nur Ausgaben/Aufwendungen des Veranlagungsjahres und ein allfälliger Überhang aus einem Vorjahr anzugeben. - (Kennzahl 9216)",
+        "9217": "Großes Arbeitsplatzpauschale (1.200 Euro für ein volles Wirtschaftsjahr) - (Kennzahl 9217)",
+        "9225": "Eigene Pflichtversicherungsbeiträge, Beiträge zu Versorgungs- und Unterstützungseinrichtungen und Beiträge zur Selbständigenvorsorge - (Kennzahl 9225)",
+        "9230": "In den obigen Kennzahlen nicht erfasste übrige Aufwendungen/Betriebsausgaben (ohne pauschalierte Betriebsausgaben), Kapitalveränderungen - Saldo - (Kennzahl 9230)",
+        "320": "Gewinn / Verlust (Saldo der Betriebseinnahmen und Betriebsausgaben) - (Kennzahl 320)"
+      }
+    },
+    "Veranstaltungstechnik": {
+      "title": "VERANSTALTUNGSTECHNIK - 90.0 Kreative, künstlerische und unterhaltende Tätigkeiten.",
+      "einnahmen": {
+        "9040": "Erträge/Betriebseinnahmen (Waren-/Leistungserlöse) ohne solche, die in einer Mitteilung gemäß § 109a erfasst sind - EKR 40-44 - einschließlich Eigenverbrauch (Entnahmewerte von Umlaufvermögen) - (Kennzahl 9040)",
+        "9050": "Erträge/Betriebseinnahmen, die in einer Mitteilung gemäß § 109a erfasst sind - EKR 40-44 - (Kennzahl 9050)"
+      },
+      "ausgaben": {
+        "9100": "Waren, Rohstoffe, Hilfsstoffe\nEKR 500-539, 580 - (Kennzahl 9100)",
+        "9110": "Beigestelltes Personal (Fremdpersonal) und Fremdleistungen\nEKR 570-579, 581, 750-753 - (Kennzahl 9110)",
+        "9120": "Personalaufwand (\"eigenes Personal\")\nEKR 60-68 - (Kennzahl 9120)",
+        "9130": "Abschreibungen auf das Anlagevermögen (z.B. AfA, geringwertige Wirtschaftsgüter,\nEKR 700-708), soweit sie nicht in Kennzahl 9134 und/oder 9135 zu erfassen sind.\n - (Kennzahl 9130)",
+        "9134": "Degressive Absetzung für Abnutzung (§ 7 Abs. 1a) - (Kennzahl 9134)",
+        "9160": "Reise- und Fahrtspesen inkl. Kilometergeld und Diäten (ohne tatsächliche Kfz-Kosten)\nEKR 734-737 - (Kennzahl 9160)",
+        "9165": "Pauschale von 50% der Kosten einer Wochen-, Monats- oder Jahreskarte für Massenbeförderungsmittel - (Kennzahl 9165)",
+        "9180": "Miet- und Pachtaufwand, Leasing\nEKR 740-743, 744-747 - (Kennzahl 9180)",
+        "9190": "Provisionen an Dritte, Lizenzgebühren\nEKR 754-757, 748-749\n - (Kennzahl 9190)",
+        "9200": "Werbe- und Repräsentationsaufwendungen, nicht in den Kennzahlen 9243 bis 9209 zu erfassenden Spenden, Trinkgelder\nEKR 765-769 - (Kennzahl 9200)",
+        "9275": "Arbeitszimmer\nEs darf keine Eintragung in Kennzahl 9215, 9216 oder 9217 erfolgen. Nur abzugsfähig, wenn das Arbeitszimmer Mittelpunkt der gesamten betrieblichen Tätigkeit ist.\n - (Kennzahl 9275)",
+        "9215": "Kleines Arbeitsplatzpauschale (300 Euro für ein volles Wirtschaftsjahr)\nEs darf keine Eintragung in Kennzahl 9275 oder Kennzahl 9217 erfolgen.\n - (Kennzahl 9215)",
+        "9216": "Ausgaben/Aufwendungen für ergonomisch geeignetes Mobiliar (z.B. Schreibtisch, Drehstuhl, Schreibtischlampe) bis höchstens 300 Euro.\nEs darf keine Eintragung in Kennzahl 9275, 9217 oder 159 (Formular E 1) erfolgen. Hier sind nur Ausgaben/Aufwendungen des Veranlagungsjahres und ein allfälliger Überhang aus einem Vorjahr anzugeben. - (Kennzahl 9216)",
+        "9217": "Großes Arbeitsplatzpauschale (1.200 Euro für ein volles Wirtschaftsjahr) - (Kennzahl 9217)",
+        "9225": "Eigene Pflichtversicherungsbeiträge, Beiträge zu Versorgungs- und Unterstützungseinrichtungen und Beiträge zur Selbständigenvorsorge - (Kennzahl 9225)",
+        "9230": "In den obigen Kennzahlen nicht erfasste übrige Aufwendungen/Betriebsausgaben (ohne pauschalierte Betriebsausgaben), Kapitalveränderungen - Saldo - (Kennzahl 9230)",
+        "320": "Gewinn / Verlust (Saldo der Betriebseinnahmen und Betriebsausgaben) - (Kennzahl 320)"
+      }
+    },
+    "Werbeagentur": {
+      "title": "WERBEAGENTUR - 73.1 Werbung",
+      "einnahmen": {
+        "9040": "Erträge/Betriebseinnahmen (Waren-/Leistungserlöse) ohne solche, die in einer Mitteilung gemäß § 109a erfasst sind - EKR 40-44 - einschließlich Eigenverbrauch (Entnahmewerte von Umlaufvermögen) - (Kennzahl 9040)",
+        "9050": "Erträge/Betriebseinnahmen, die in einer Mitteilung gemäß § 109a erfasst sind - EKR 40-44 - (Kennzahl 9050)"
+      },
+      "ausgaben": {
+        "9100": "Waren, Rohstoffe, Hilfsstoffe\nEKR 500-539, 580 - (Kennzahl 9100)",
+        "9110": "Beigestelltes Personal (Fremdpersonal) und Fremdleistungen\nEKR 570-579, 581, 750-753 - (Kennzahl 9110)",
+        "9120": "Personalaufwand (\"eigenes Personal\")\nEKR 60-68 - (Kennzahl 9120)",
+        "9130": "Abschreibungen auf das Anlagevermögen (z.B. AfA, geringwertige Wirtschaftsgüter,\nEKR 700-708), soweit sie nicht in Kennzahl 9134 und/oder 9135 zu erfassen sind.\n - (Kennzahl 9130)",
+        "9134": "Degressive Absetzung für Abnutzung (§ 7 Abs. 1a) - (Kennzahl 9134)",
+        "9160": "Reise- und Fahrtspesen inkl. Kilometergeld und Diäten (ohne tatsächliche Kfz-Kosten)\nEKR 734-737 - (Kennzahl 9160)",
+        "9165": "Pauschale von 50% der Kosten einer Wochen-, Monats- oder Jahreskarte für Massenbeförderungsmittel - (Kennzahl 9165)",
+        "9180": "Miet- und Pachtaufwand, Leasing\nEKR 740-743, 744-747 - (Kennzahl 9180)",
+        "9190": "Provisionen an Dritte, Lizenzgebühren\nEKR 754-757, 748-749 - (Kennzahl 9190)",
+        "9200": "Werbe- und Repräsentationsaufwendungen, nicht in den Kennzahlen 9243 bis 9209 zu erfassenden Spenden, Trinkgelder\nEKR 765-769 - (Kennzahl 9200)",
+        "9275": "Arbeitszimmer\nEs darf keine Eintragung in Kennzahl 9215, 9216 oder 9217 erfolgen. Nur abzugsfähig, wenn das Arbeitszimmer Mittelpunkt der gesamten betrieblichen Tätigkeit ist.\n - (Kennzahl 9275)",
+        "9215": "Kleines Arbeitsplatzpauschale (300 Euro für ein volles Wirtschaftsjahr)\nEs darf keine Eintragung in Kennzahl 9275 oder Kennzahl 9217 erfolgen.\n - (Kennzahl 9215)",
+        "9216": "Ausgaben/Aufwendungen für ergonomisch geeignetes Mobiliar (z.B. Schreibtisch, Drehstuhl, Schreibtischlampe) bis höchstens 300 Euro.\nEs darf keine Eintragung in Kennzahl 9275, 9217 oder 159 (Formular E 1) erfolgen. Hier sind nur Ausgaben/Aufwendungen des Veranlagungsjahres und ein allfälliger Überhang aus einem Vorjahr anzugeben. - (Kennzahl 9216)",
+        "9217": "Großes Arbeitsplatzpauschale (1.200 Euro für ein volles Wirtschaftsjahr) - (Kennzahl 9217)",
+        "9225": "Eigene Pflichtversicherungsbeiträge, Beiträge zu Versorgungs- und Unterstützungseinrichtungen und Beiträge zur Selbständigenvorsorge - (Kennzahl 9225)",
+        "9230": "In den obigen Kennzahlen nicht erfasste übrige Aufwendungen/Betriebsausgaben (ohne pauschalierte Betriebsausgaben), Kapitalveränderungen - Saldo - (Kennzahl 9230)",
+        "320": "Gewinn / Verlust (Saldo der Betriebseinnahmen und Betriebsausgaben) - (Kennzahl 320)"
+      }
+    }
+  },
+  "u1_struktur": {
+    "Lieferungen, sonstige Leistungen und Eigenverbrauch": {
+      "kennzahl_000": "Gesamtbetrag der Bemessungsgrundlagen des Veranlagungszeitraumes für Lieferungen und sonstige Leistungen (ohne den nachstehend\nangeführten Eigenverbrauch) einschließlich Anzahlungen (jeweils ohne Umsatzsteuer) - (Kennzahl 000)"
+    },
+    "Steuerfreie Umsätze": {
+      "kennzahl_020": "Übrige steuerfreie Umsätze ohne Vorsteuerabzug (§ 6 Abs. 1 Z 0) sind anzugeben - (Kennzahl 020)"
+    },
+    "Steuersätze": {
+      "kennzahl_022": "Davon sind zu versteuern mit:\n20% Normalsteuersatz - (Kennzahl 022)",
+      "kennzahl_029": "10% ermäßigter Steuersatz - (Kennzahl 029)",
+      "kennzahl_006": "13% ermäßigter Steuersatz - (Kennzahl 006)",
+      "kennzahl_037": "19% für Jungholz und Mittelberg - (Kennzahl 037)",
+      "kennzahl_052": "10% Zusatzsteuer für pauschalierte land- und forstwirtschaftliche Betriebe - (Kennzahl 052)",
+      "kennzahl_007": "7% Zusatzsteuer für pauschalierte land- und forstwirtschaftliche Betriebe - (Kennzahl 007)"
+    },
+    "Innergemeinschaftliche Erwerbe": {
+      "kennzahl_070": "Gesamtbetrag der Bemessungsgrundlagen für innergemeinschaftliche Erwerbe - (Kennzahl 070)",
+      "kennzahl_071": "Davon steuerfrei gemäß Art. 6 Abs. 2 und § 28 Abs. 62 (Nullsatz für innergemeinschaftliche Erwerbe von Photovoltaikmodulen bis 31.3.2025 bzw. 31.12.2025, wenn Vertragsabschluss vor 7.3.2025 erfolgte.) - (Kennzahl 071)"
+    },
+    "Steuersätze für Innergemeinschaftliche Erwerbe": {
+      "kennzahl_072": "Davon sind zu versteuern mit:\n20% Normalsteuersatz - (Kennzahl 072)",
+      "kennzahl_073": "10% ermäßigter Steuersatz - (Kennzahl 073)",
+      "kennzahl_008": "13% ermäßigter Steuersatz - (Kennzahl 008)",
+      "kennzahl_088": "19% für Jungholz und Mittelberg - (Kennzahl 088)"
+    },
+    "Vorsteuer": {
+      "kennzahl_060": "Gesamtbetrag der Vorsteuern [einschließlich der pauschal ermittelten Vorsteuern (Kennzahlen 084, 085, 086, 078, 068, 079) aber ohne die übrigen\ngesondert anzuführenden Vorsteuerbeträge (Kennzahlen 061, 083, 065, 066, 082, 087, 089, 064, 063, 067)] - (Kennzahl 060)"
+    },
+    "Gesondert anzuführende Vorsteuerbeträge": {
+      "kennzahl_061": "Vorsteuern betreffend die entrichtete Einfuhrumsatzsteuer (§ 12 Abs. 1 Z 2 lit. a) - (Kennzahl 061)",
+      "kennzahl_062": "Davon nicht abzugsfähig gemäß § 12 Abs. 3 iVm Abs. 4 und 5 - (Kennzahl 062)"
+    }
+  }
+}

@@ -2,27 +2,41 @@
 # ⚠️ CORE RULES: BUCHHALTUNG, STEUERN (AT) & ERP-ARCHITEKTUR
 # ============================================================================
 
-1. GELD-MATHEMATIK & PRÄZISION (CENT-BASIS):
+## 1. GRUNDSATZ: STABILITÄT VOR REFACTORING & ARBEITSWEISE
+- **KEINE eigenmächtigen Änderungen:** Einmal korrekt implementierte Berechnungslogiken, UI-Strukturen oder Feld-Mappings dürfen NIEMALS ohne explizite Anweisung geändert, refactored oder gelöscht werden.
+- **Funktionalität vor Ästhetik:** Verändere niemals funktionierenden PHP-Code für "saubereres Design", es sei denn, es wird ausdrücklich verlangt. Kein Löschen von funktionalen Blöcken!
+- **Validierung:** Bevor du Code schreibst, validiere die ACF-Feldnamen gegen den letzten bekannten Stand (z.B. JSON-Exports).
+
+## 2. GELD-MATHEMATIK & PRÄZISION (CENT-BASIS)
 - Nutze NIEMALS Fließkommazahlen (`float`) für Berechnungen oder Summationen!
 - Alle internen Berechnungen für Geldbeträge MÜSSEN in Cent (Integer) durchgeführt werden (z. B. `10.50 €` wird intern zu `1050`).
 - Rundungsfehler sind inakzeptabel. Die Umwandlung in Euro (`/ 100`) und die Formatierung (`number_format`) findet AUSSCHLIESSLICH beim finalen Rendern für das Frontend oder PDF statt.
 
-2. FINANZONLINE KONFORMITÄT (UVA & E1):
-- Variablen und Array-Keys für Steuern MÜSSEN die offiziellen Kennzahlen von FinanzOnline enthalten.
-- Beispiele UVA: `kennzahl_000` (Lieferungen/Leistungen), `kennzahl_022` (Einfuhr), `kennzahl_060` (Vorsteuer).
-- Berechnungen für Quartale oder Jahresabschlüsse (z.B. Einkommenssteuerausgleich) müssen exakt auf diesen Kennzahlen basieren.
+## 3. DATEN-ARCHITEKTUR & FELD-MAPPINGS
+- **Stammdaten-Quelle:** Stammdaten liegen auf der ACF Options-Seite (`acf-options-documents-list-view`) im Repeater `view_jahre`.
+- **Kennzahlen-Soll-Werte:** Soll-Werte für E1/U1 kommen aus der Datei `tax-snapshot-data.json`. Logik und statische Daten müssen strikt getrennt bleiben.
+- **Beleg-Relationen:**
+  - *Einnahmen:* Kunde wird über das Beziehungs-Feld `documents_client_relationship` geladen (zieht `clients_company_name`).
+  - *Ausgaben:* Verkäufer wird über das Feld `documents_verkaufer` geladen.
+- **Gewerbe-Slugs (E1):** Es existieren exakt vier feste Slugs im Feld `documents_gewerbeschein`: `catering`, `event_technik`, `event_management`, `werbe_agentur`. Belege ohne oder mit anderen Slugs gelten als "Nicht zugeordnet" (Fehler-Fallback).
 
-3. SNAPSHOT-INTEGRITÄT (IMMUTABILITY & LOGGING):
+## 4. FINANZONLINE KONFORMITÄT (UVA & E1) & UI-VORGABEN
+- **Kennzahlen:** Variablen und Array-Keys für Steuern MÜSSEN die offiziellen Kennzahlen von FinanzOnline enthalten (z.B. UVA: `kennzahl_000`, `kennzahl_022`, `kennzahl_060`. E1: `9040`, `9100`, `320`).
+- **UI & Texte:** Die Texte in den E1/U1/UVA Formularen sind 1:1 Kopien von FinanzOnline. Ändere kein Komma und keine Bezeichnung in den Labels.
+- **Berechnungsebenen:** Berechnungen müssen konsistent in Jahres-, Quartals- und Monatsansichten (UVA) exakt aufsummiert werden. Die Accordion-Hierarchie (Jahr -> Infos/Fehler -> E1 -> U1 -> UVA -> Belege) ist fix.
+
+## 5. SNAPSHOT-INTEGRITÄT (IMMUTABILITY & LOGGING)
 - Die Snapshot-Dateien (JSON) im `/pc-tax-snapshots/` Ordner sind HEILIG.
 - Code-Änderungen an der Steuerlogik dürfen *niemals* bestehende Snapshots historischer Monate überschreiben, außer es wird explizit ein `$force_overwrite` Flag vom Admin gesetzt.
 - Nutze für das Logging ausschließlich die etablierte `AI_Logger::debug()` Methode (z.B. mit Parameter 'bug' oder 'test').
 
-4. SLICED INVOICES & DIE MITARBEITER-TOOL-BRÜCKE:
+## 6. SLICED INVOICES & DIE MITARBEITER-TOOL-BRÜCKE
 - Die Rechnungs-Erstellung über das Mitarbeiter-Tool (REST-API) muss über die bestehenden Hooks laufen.
 - Bei der Anlage von "Sliced Invoices" als Draft (Entwurf) MÜSSEN die korrekten ACF-Absender-Profile (z.B. "Party Crowd") geladen werden.
-- Nutze für die Rechnungsnummern zwingend die Mechanik aus `partycrowd_generate_global_invoice_number` und den Metakey `_global_invoice_number`. Überschreibe niemals manuell HTML5-Validierungen, sondern belasse die Fixes im JS (`#_sliced_client` required remove).
+- Nutze für die Rechnungsnummern zwingend die Mechanik aus `partycrowd_generate_global_invoice_number` und den Metakey `_global_invoice_number`.
+- Überschreibe niemals manuell HTML5-Validierungen, sondern belasse die Fixes im JS (`#_sliced_client` required remove).
 
-5. WORDPRESS & ACF STANDARDS:
+## 7. WORDPRESS & ACF STANDARDS
 - Verändere keine bestehenden Custom Post Types (`documents`, `sliced_invoice`, `clients`).
-- Nutze ACF-Funktionen (`get_field`, `update_field`) korrekt und beachte, ob Felder von einer Options-Seite (`'option'`) geladen werden müssen.
+- Nutze ACF-Funktionen (`get_field`, `get_sub_field`, `have_rows`) korrekt und beachte strikt, ob Felder von einer Options-Seite (`'option'`) geladen werden müssen.
 - Wenn UI-Anpassungen (CSS/JS) nötig sind, beachte, dass das System Webpack Encore nutzt. Frontend-JS gehört in die `main.js`, nicht als Inline-Script in PHP-Dateien (Ausnahme: strikte Backend-Admin-Fixes).
