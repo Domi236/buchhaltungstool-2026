@@ -26,6 +26,11 @@ class Class_Tax_Snapshot {
             $calculated = Class_Tax_Engine::calculate_year( $year );
             $sd = $calculated['stammdaten'];
 
+            // ACF E1-320-String (z.B. "-10.675,82") in Cent parsen
+            $sd_e1_320_clean    = str_replace( [ '.', ' ' ], '', $sd['e1_320'] );
+            $sd_e1_320_clean    = str_replace( ',', '.', $sd_e1_320_clean );
+            $e1_320_acf_cent    = (int) round( (float) $sd_e1_320_clean * 100 );
+
             $ausserbetrieblich = [
                 'title' => 'Außerbetriebliche Einkunftsarten',
                 'items' => [
@@ -100,8 +105,12 @@ class Class_Tax_Snapshot {
                 foreach ( $ausserbetrieblich['items'] as $kz => $text ) {
                     if ( strpos( $kz, 'title_' ) !== 0 ) {
                         $soll = $expected['e1']['Ausserbetrieblich'][ $kz ] ?? 0;
-                        if ( $soll !== 0 ) $e1_mismatch_count++;
+                        $ist  = $calculated['e1']['Ausserbetrieblich'][ $kz ] ?? 0;
+                        if ( $soll !== $ist ) $e1_mismatch_count++;
                     }
+                }
+                if ( $e1_320_acf_cent !== $calculated['e1_320_calculated'] ) {
+                    $e1_mismatch_count++;
                 }
             }
 
@@ -169,7 +178,7 @@ class Class_Tax_Snapshot {
             echo "<h3 style='font-size: 15px; background: #eee; padding: 8px; margin-top: 20px; margin-bottom: 10px;'>Fehlerliste (Manuell)</h3>";
             if ( ! empty( $sd['fehlerliste'] ) ) {
                 echo "<ul style='font-size:13px; list-style-type:none; padding-left:0;'>";
-                foreach ( $sd['fehlerliste'] as $f ) { echo "<li><span style='color:#f39c12;'>⚠️</span> {$f}</li>"; }
+                foreach ( $sd['fehlerliste'] as $f ) { echo "<li style='margin-bottom:5px;'><span style='color:#f39c12;'>⚠️</span> {$f}</li>"; }
                 echo "</ul>";
             } else {
                 echo "<p style='font-size:13px;'><em>Keine manuellen Fehler hinterlegt.</em></p>";
@@ -249,6 +258,11 @@ class Class_Tax_Snapshot {
                 }
             }
 
+            // GLOBALER SALDO KENNZAHL 320
+            echo "<h3 style='font-size: 15px; background: #eee; padding: 8px; margin-top: 30px; margin-bottom: 10px;'>Gesamtsaldo der Einkünfte aus selbständiger Arbeit sowie Einkünfteverteilungen</h3>";
+            $kz_320_text = "Summe Kennzahl 320\nSumme aus allen Beilagen E1a, E1a-K und E11 sowie den Kennzahlen 321 bis 501 - (Kennzahl 320)";
+            $render_row( '320', $kz_320_text, $e1_320_acf_cent, $calculated['e1_320_calculated'] );
+
             echo "<div style='margin-top: 40px; border-top: 2px solid #ccc; padding-top: 20px;'>";
             echo "<h2 style='font-size: 18px; margin-bottom: 15px;'>" . $ausserbetrieblich['title'] . "</h2>";
             foreach ( $ausserbetrieblich['items'] as $kz => $text ) {
@@ -256,7 +270,7 @@ class Class_Tax_Snapshot {
                     echo "<p style='font-weight: bold; font-size: 13px; margin: 15px 0 5px 0; white-space: pre-line;'>" . $text . "</p>";
                     continue;
                 }
-                $render_row( $kz, $text, $expected['e1']['Ausserbetrieblich'][ $kz ] ?? 0, 0 );
+                $render_row( $kz, $text, $expected['e1']['Ausserbetrieblich'][ $kz ] ?? 0, $calculated['e1']['Ausserbetrieblich'][ $kz ] ?? 0 );
             }
             echo "</div></div></details>";
 
@@ -382,7 +396,7 @@ class Class_Tax_Snapshot {
                         echo "<th style='padding:6px; border:1px solid #ddd; width:10%; text-align:right;'>Brutto</th>";
                         echo "</tr>";
                         foreach ( $doc['items'] as $item ) {
-                            $privat_bg  = $item['privat_pct'] > 0 ? '#fff3e0' : 'transparent';
+                            $privat_bg   = $item['privat_pct'] > 0 ? '#fff3e0' : 'transparent';
                             $item_brutto = ( $item['net_business'] + $item['tax_business'] ) / 100;
                             echo "<tr style='background: {$privat_bg};'>";
                             echo "<td style='padding:6px; border:1px solid #ddd;'>{$item['qty']}x</td>";
