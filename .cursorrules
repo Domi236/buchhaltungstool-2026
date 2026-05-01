@@ -40,3 +40,9 @@
 - Verändere keine bestehenden Custom Post Types (`documents`, `sliced_invoice`, `clients`).
 - Nutze ACF-Funktionen (`get_field`, `get_sub_field`, `have_rows`) korrekt und beachte strikt, ob Felder von einer Options-Seite (`'option'`) geladen werden müssen.
 - Wenn UI-Anpassungen (CSS/JS) nötig sind, beachte, dass das System Webpack Encore nutzt. Frontend-JS gehört in die `main.js`, nicht als Inline-Script in PHP-Dateien (Ausnahme: strikte Backend-Admin-Fixes).
+
+## 8. TOKEN-EFFIZIENZ & KONTEXT-MANAGEMENT
+- **@-Regel befolgen:** Lese und analysiere NUR Dateien, die vom Nutzer im aktuellen Prompt explizit mit `@` referenziert wurden. Lade keine unnötigen Dateien aus dem Projektverzeichnis in den Kontext.
+- **Snippet-Ausgabe statt Full-File:** Gebe bei Änderungen an bestehenden Dateien NUR die geänderten Funktionen oder Code-Blöcke aus und beschreibe exakt, wo diese eingefügt/ersetzt werden müssen. Generiere niemals komplette Mega-Dateien (wie `class-tax-engine.php`), es sei denn, es wird explizit verlangt.
+- **Modulare Dateistruktur:** Neue große Features (z.B. das Mitarbeiter-Tool) MÜSSEN in neue, fokussierte Dateien ausgelagert werden. Vermeide das Aufblähen bestehender Core-Dateien, um Tokens beim Lesen und Schreiben zu sparen.
+- **Session-Hygiene:** Wenn eine komplexe Aufgabe gelöst ist und ein völlig neues Thema beginnt, weise den Nutzer proaktiv darauf hin, einen neuen Chat zu starten, um den Kontext-Ballast zu resetten.

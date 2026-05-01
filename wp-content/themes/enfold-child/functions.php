@@ -125,3 +125,5 @@ add_action( 'wp_loaded', function() {
 });
 // --- ENDE: EINZIGER TEST TRIGGER ---
 
+
+Class_Tax_Snapshot::init();

@@ -473,7 +473,7 @@ class Calucalation {
                     <strong><?php //echo $this->get_calcuclate_betriebskosten_netto_ust($gewerbe[3], $cat, $abschreibungsart, $month)[0]; ?> €</strong> | Summe UST:
                     <strong><?php //echo $this->get_calcuclate_betriebskosten_netto_ust($gewerbe[3], $cat, $abschreibungsart, $month)[1]; ?> €</strong> | SUMME BRUTTO:
                     <strong><?php //echo $this->get_calcuclate_betriebskosten_netto_ust($gewerbe[3], $cat, $abschreibungsart, $month)[2]; ?> €</strong>|
-                </span><br/>-->
+                </span><br/>
         <?php
         return ob_get_clean();
     }
